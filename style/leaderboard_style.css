@@ -4,7 +4,7 @@
   display: flex;
   min-height: 100vh;
 }
-.feauture {
+.filter-group {
   max-width: 220px;
   max-height: 50px;
   display: flex;
@@ -13,15 +13,8 @@
   justify-content: space-between;
   margin-top: 10px;
 }
-#weekly {
-  padding: 7px 12px;
-  background-color: #3366CCFF;
-  color: #FFFFFFFF;
-  border: 1px solid #DEE1E6FF;
-  border-radius: 6px;
-}
 
-.button_filter {
+.button-filter {
   padding: 7px 12px;
   background-color: #FFFFFFFF;
   color: rgb(0, 0, 0);
@@ -29,16 +22,21 @@
   border-radius: 6px;
 }
 
-.container_table {
+.button-filter.active {
+  background-color: #3366CCFF;
+  color: #FFFFFFFF;
+}
+
+.leaderboard-table {
   margin-top: 20px;
 }
-.container_table table {
+.leaderboard-table table {
   width: 100%;
   border-collapse: collapse;
   font-family: serif;
 }
 
-.container_table thead {
+.leaderboard-table thead {
   background-color: #ffffff;
   height: 50px;
   border: 1px solid rgb(214, 209, 209);
@@ -51,7 +49,7 @@ tr, td {
 tbody {
   background-color: #FAFAFBFF;
 }
-.number {
+.rank-number {
   font-weight: 700;
   color: #171A1FFF;
 }
@@ -61,15 +59,23 @@ tbody {
   font-weight: 700;
 }
 
-.data_users {
+.points {
   color: #3366CCFF;
   font-weight: 700;
 }
-.user_name {
+.user-name {
   color: #171A1FFF;
   line-height: 24px;
+  font-weight: 500;
 }
-.container_rank_user {
+
+.user-info {
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+}
+
+.container-rank-user {
   background-color: #F3F6FCFF;
   width: 100%;
   height: 170px;
@@ -77,31 +83,18 @@ tbody {
   border-radius: 6px;
 }
 
-.container_avatar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.container-rank-user h2 {
+  font-weight: 600;
+  color: #171A1FFF;
+  padding: 16px;
 }
 
-.avatar {
-  width: 36px;
-  height: 36px;
-  background-color: #3366cc;
-  border-radius: 50%;
-  margin-right: 7px;
-  /* overflow: hidden; */
-  object-fit: cover;
-}
-
-.container_rank_user h2 {
-  padding: 20px;
-}
-.background_rank_user {
-  padding: 5px;
+.user-rank-content {
   background-color: #FAFAFBFF;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.container_rank_user table {
-  width: 100%;
+  display: grid;
+  grid-template-columns: 80px auto auto;
+  align-items: center;
+  padding: 10px;
+  margin: 20px;
+  gap: 30px;
 }

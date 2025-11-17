@@ -24,8 +24,6 @@
 
 .card {
   background-color: #ffffffff;
-  /* padding: 60px 10px; */
-  /* width: 200px; */
   display: flex;
   flex-direction: column;
   border-radius: 10px;
@@ -34,24 +32,28 @@
   border: 1px solid #DEE1E6FF;
 }
 
-.view_history_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#view_history {
+#view-history {
   background-color: #19191fff;
   width: 119px;
   height: 40px;
   color: #f3f6fcff;
-  opacity: 1;
   border-radius: 6px;
-  border-width: 1px;
-  border-color: #f3f6fcff;
+  border: none;
+  border: 1px solid #19191fff;
+}
+
+#view-history:hover {
+  background-color: #fff;
+  cursor: pointer;
+  color: #19191fff;
 }
 .card_image {
-   background-color: #c2c2c2;
-  height: 120px;
+  background-color: #c2c2c2;
+  height: 150px;
+}
+.card_image img {
+  width: 100%;
+  height: 100%;
 }
 .card-content {
   flex: 1;
@@ -68,40 +70,39 @@
   color: #555;
 }
 
-/* Footer kartu */
 .card-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 15px;
-  /* background-color: #d1d1d1; */
 }
 
-.card-footer button {
-  font-family: Montserrat, sans-serif;
+.btn-redeem {
+  font-family: sans-serif;
   background-color: #3366CCFF;
-  color: #ffffffff;
-  border: none;
+  color: #FFFFFFFF;
+  border: 1px solid #3366CCFF;
   border-radius: 6px;
-  padding: 8px;
   cursor: pointer;
-  width: 100%;
+  font-weight: 600;
+  padding: 8px;
+  margin: 15px;
 }
 
-.img {
-  width: 100%;
-  height: 100%;
-  /* border-radius: 6px; */
+.btn-redeem:hover {
+  background: #FFFFFFFF;
+  color: #3366CCFF;
 }
-.container_points {
+
+.card-points {
   display: flex;
   flex-direction: column;
   margin-left: 15px;
 }
-.container_points h3 {
+.card-points h3 {
   color: #3366CCFF;
 }
-.container_points p {
+.card-points p {
   color: #555;
   font-size: small;
   margin-bottom: 5px;
