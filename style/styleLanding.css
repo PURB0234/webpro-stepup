@@ -99,7 +99,7 @@ nav ul li a{
 @keyframes moveup{
     100%{
         opacity: 1;
-        transform: translateY(0px);
+        transform: translateY(-10px);
     }
 }
 .container{
