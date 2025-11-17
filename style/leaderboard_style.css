@@ -71,7 +71,6 @@ tbody {
 
 .user-info {
   display: flex;
-  /* flex-direction: row; */
   align-items: center;
 }
 
