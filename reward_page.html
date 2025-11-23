@@ -6,15 +6,21 @@
     <title>StepUp Rewards</title>
     <link rel="stylesheet" href="style/reward.css" />
     <link rel="stylesheet" href="style_side_nav_main_footer.css" />
+    <link rel="stylesheet" href="style/base/layout-responsive.css">
   </head>
   <body>
     <div class="container">
-      <aside class="sidebar">
+      <aside class="sidebar active">
         <div class="logo-container">
-          <div class="logo-icon">
-            <img class="logo-image" src="assets/icon/logo.png" alt="" />
+          <div class="logo-left">
+            <div class="logo-icon">
+              <img class="logo-image" src="assets/icon/logo.png" alt="" />
+            </div>
+            <h2>StepUp</h2>
           </div>
-          <h2>StepUp</h2>
+          <button class="btn-side">
+            <img class="icon" src="assets/icon/icon-menu.png" alt="">
+          </button>
         </div>
 
         <div class="sidebar-content">
@@ -93,8 +99,10 @@
             <button id="view-history">View History</button>
           </div>
 
-          <section class="vouchers">
-            <h3>Exclusive Vouchers</h3>
+          <section class="vouchers-section">
+            <h3>Exclusive Vouchers
+              <a href="" class="see-all-link">See All</a>
+            </h3>
             <div class="card-grid">
               <article class="card">
                 <div class="card_image">
@@ -184,8 +192,10 @@
             </div>
           </section>
 
-          <section class="discounts">
-            <h3>Discount Codes</h3>
+          <section class="vouchers-section">
+            <h3>Discount Codes
+              <a href="" class="see-all-link">See All</a>
+            </h3>
             <div class="card-grid">
               <article class="card">
                 <div class="card_image">
@@ -274,5 +284,6 @@
         </footer>
       </div>
     </div>
+    <script src="assets/js/sidebar.js"></script>
   </body>
 </html>
