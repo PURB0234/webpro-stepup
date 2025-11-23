@@ -1,5 +1,4 @@
 @media (max-width: 700px) {
-
   .sidebar {
     position: fixed;
     left: -260px;
@@ -13,11 +12,34 @@
     left: 0;
   }
 
+  .sidebar-link {
+    gap: 20px;
+  }
+
+  .main {
+    margin-top: 50px;
+  }
+
+  .logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+    color: #3366cc;
+    justify-content: space-between;
+    margin-left: 45px;
+  }
+
+  .navbar {
+    position: fixed;
+    width: 100%;
+  }
+
   .btn-side {
     position: fixed;
-    top: 15px;
-    left: 15px;
-    z-index: 3000;
+    top: 10px;
+    left: 10px;
+    /* z-index: 3000; */
     width: 40px;
     height: 40px;
     border: none;
@@ -26,7 +48,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); */
     cursor: w-resize;
   }
 
