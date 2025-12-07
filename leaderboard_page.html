@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style/leaderboard_style.css" />
     <link rel="stylesheet" href="style_side_nav_main_footer.css" />
     <link rel="stylesheet" href="style-responsive-layout.css" />
+    <link rel="stylesheet" href="style/responsive_leaderboard_page.css" />
   </head>
   <body>
     <div class="container">
@@ -19,7 +20,7 @@
             <h2>StepUp</h2>
           </div>
           <button class="btn-side">
-            <img class="icon" src="assets/icon/icon-menu.png" alt="">
+            <img class="icon" src="assets/icon/icon-menu.png" alt="" />
           </button>
         </div>
 
@@ -58,6 +59,13 @@
                 <a href="event.html" class="sidebar-link">
                   <img class="icon" src="assets/icon/dumbel.png" alt="" />
                   My Challenges
+                </a>
+              </li>
+
+              <li>
+                <a href="community_feed.html" class="sidebar-link">
+                  <img class="icon" src="assets/icon/person.png" alt="" />
+                  Community
                 </a>
               </li>
             </ul>
@@ -250,23 +258,20 @@
             </table>
           </div>
 
-          <section class="container-rank-user">
+          <div class="rank-wrapper">
             <h2>Your Rank</h2>
-            <div class="user-rank-content">
-              <span class="rank-number">100</span>
 
-              <div class="user-info">
-                <img
-                  src="data:image/jpeg;base64,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"
-                  alt="User avatar"
-                  class="avatar"
-                />
-                <span class="user-name">JabranVronka</span>
-              </div>
+            <div class="rank-card">
+              <div class="rank-numbers">100</div>
 
-              <span class="points">234000 pts</span>
+              <img class="rank-avatar" src="assets/avatar/2.jpg" alt="avatar" />
+
+              <div class="rank-name">JabranVronka</div>
+
+              <div class="rank-points">234000 pts</div>
             </div>
-          </section>
+          </div>
+
         </main>
 
         <footer>
