@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap'); */
 
 .container {
   display: flex;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 .filter-group {
   max-width: 220px;
@@ -16,15 +16,15 @@
 
 .button-filter {
   padding: 7px 12px;
-  background-color: #FFFFFFFF;
+  background-color: #ffffffff;
   color: rgb(0, 0, 0);
-  border: 1px solid #DEE1E6FF;
+  border: 1px solid #dee1e6ff;
   border-radius: 6px;
 }
 
 .button-filter.active {
-  background-color: #3366CCFF;
-  color: #FFFFFFFF;
+  background-color: #3366ccff;
+  color: #ffffffff;
 }
 
 .leaderboard-table {
@@ -41,17 +41,18 @@
   height: 50px;
   border: 1px solid rgb(214, 209, 209);
   font-weight: 600;
-  color: #565D6DFF;
+  color: #565d6dff;
 }
-tr, td {
+tr,
+td {
   padding: 15px;
 }
 tbody {
-  background-color: #FAFAFBFF;
+  background-color: #fafafbff;
 }
 .rank-number {
   font-weight: 700;
-  color: #171A1FFF;
+  color: #171a1fff;
 }
 
 .number_for_top_three {
@@ -60,11 +61,11 @@ tbody {
 }
 
 .points {
-  color: #3366CCFF;
+  color: #3366ccff;
   font-weight: 700;
 }
 .user-name {
-  color: #171A1FFF;
+  color: #171a1fff;
   line-height: 24px;
   font-weight: 500;
 }
@@ -75,7 +76,7 @@ tbody {
 }
 
 .container-rank-user {
-  background-color: #F3F6FCFF;
+  background-color: #f3f6fcff;
   width: 100%;
   height: 170px;
   margin-top: 20px;
@@ -84,16 +85,57 @@ tbody {
 
 .container-rank-user h2 {
   font-weight: 600;
-  color: #171A1FFF;
+  color: #171a1fff;
   padding: 16px;
 }
 
 .user-rank-content {
-  background-color: #FAFAFBFF;
+  background-color: #fafafbff;
   display: grid;
   grid-template-columns: 80px auto auto;
   align-items: center;
   padding: 10px;
   margin: 20px;
   gap: 30px;
+}
+
+.rank-wrapper {
+  background-color: #f5f8ff;
+  padding: 30px 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.rank-wrapper h2 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #1a1a1a;
+}
+
+.rank-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.rank-card {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.rank-numbers {
+  font-size: 32px;
+  color: #1b1b1b;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.rank-points {
+  color: #3366cc;
+  font-weight: 700;
+  font-size: 20px;
 }

@@ -30,11 +30,22 @@ body {
 .logo-container {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
   align-items: center;
   gap: 7px;
   color: #3366cc;
+  justify-content: space-between;
 }
+
+.logo-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7px;
+}
+
+.btn-side {
+  display: none;
+} 
 
 .logo-icon {
   width: 30px;
@@ -165,14 +176,34 @@ body {
 footer {
   text-align: center;
   background-color: #ffffffff;
-  padding: 15px;
+  /* padding: 15px; */
+  height: 200px;
   border-top: 1px solid #DEE1E6FF;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-footer span {
-  margin: 0 10px;
-  color: #555;
+.copyright-content {
+  padding: 20px;
+  background-color: #3366cc;
 }
+
+.about-content {
+  padding: 20px;
+  background-color: aqua;
+}
+
+.support-content {
+  padding: 20px;
+  background-color: blue;
+}
+
+.legal-content {
+  padding: 20px;
+  background-color: blueviolet;
+}
+
 .button_help {
   font-family: Montserrat, sans-serif;
   width: 218px;

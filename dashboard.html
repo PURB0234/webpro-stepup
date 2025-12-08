@@ -1,190 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StepUp Dashboard</title>
     <link rel="stylesheet" href="style/dashboard_style.css" />
     <link rel="stylesheet" href="style_side_nav_main_footer.css" />
+    <link rel="stylesheet" href="style-responsive-layout.css" />
 </head>
 
 <body>
-<div class="container">
-    <aside class="sidebar">
-        <div class="logo-container">
-                <div class="logo-icon">
-              <img class="logo-image" src="assets/icon/logo.png" alt="">
+    <div class="container">
+        <aside class="sidebar active">
+            <div class="logo-container">
+                <div class="logo-left">
+                    <div class="logo-icon">
+                        <img class="logo-image" src="assets/icon/logo.png" alt="" />
+                    </div>
+                    <h2>StepUp</h2>
+                </div>
+                <button class="btn-side">
+                    <img class="icon" src="assets/icon/icon-menu.png" alt="">
+                </button>
             </div>
-                <h2>StepUp</h2>
-        </div>
 
-        <div class="sidebar-content">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#" class="sidebar-link">
-                            <img class="icon" src="assets/icon/grid.png" alt="" />
-                            Dashboard
-                        </a>
-                    </li>
+            <div class="sidebar-content">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#" class="sidebar-link">
+                                <img class="icon" src="assets/icon/grid.png" alt="" />
+                                Dashboard
+                            </a>
+                        </li>
 
-                    <li>
-                        <a href="reward_page.html" class="sidebar-link">
-                            <img class="icon" src="assets/icon/gift.png" alt="" />
-                            Rewards
-                        </a>
-                    </li>
+                        <li>
+                            <a href="reward_page.html" class="sidebar-link">
+                                <img class="icon" src="assets/icon/gift.png" alt="" />
+                                Rewards
+                            </a>
+                        </li>
 
-                    <li>
-                        <a href="leaderboard_page.html" class="sidebar-link">
-                            <img class="icon" src="assets/icon/cup.png" alt="" />
-                            Leaderboard
-                        </a>
-                    </li>
+                        <li>
+                            <a href="leaderboard_page.html" class="sidebar-link">
+                                <img class="icon" src="assets/icon/cup.png" alt="" />
+                                Leaderboard
+                            </a>
+                        </li>
 
-                    <li>
-                        <a href="settings.html" class="sidebar-link">
-                            <img class="icon" src="assets/icon/gear.png" alt="" />
-                            Settings
-                        </a>
-                    </li>
+                        <li>
+                            <a href="settings.html" class="sidebar-link">
+                                <img class="icon" src="assets/icon/gear.png" alt="" />
+                                Settings
+                            </a>
+                        </li>
 
-                    <li>
-                        <a href="event.html" class="sidebar-link">
-                            <img class="icon" src="assets/icon/dumbel.png" alt="" />
-                            My Challenges
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+                        <li>
+                            <a href="event.html" class="sidebar-link">
+                                <img class="icon" src="assets/icon/dumbel.png" alt="" />
+                                My Challenges
+                            </a>
+                        </li>
+                        <li>
+                            <a href="community_feed.html" class="sidebar-link">
+                                <img class="icon" src="assets/icon/person.png" alt="" />
+                                Community
+                            </a>
+                        </li>
+                        <li>
+                            <a href="analytics.html" class="sidebar-link">
+                                <img class="icon" src="assets/icon/chart-2.png" alt="" />
+                                Analytics
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
 
-            <div class="container_logout">
-                <button class="button_help">Help & Support</button>
-                <a href="index.html" class="logout">
+                <div class="container_logout">
+                    <button class="button_help">Help & Support</button>
+                    <a href="index.html" class="logout">
                         <img class="icon" src="assets/icon/icon_logout.png" alt="" />
                         Log Out
                     </a>
-            </div>
-        </div>
-    </aside>
-
-    <div class="right_area">
-        <header class="navbar">
-            <div class="nav_right">
-                <!-- <div class="profile">Profile</div> -->
-                <div class="nav_search">
-                    <img class="icon" src="assets/icon/search.png" alt="" />
-                    <input type="text" placeholder="Search rewards..." />
-                </div>
-                <img class="icon" src="assets/icon/bell.png" alt="" />
-
-                        <img class="avatar" src="assets/avatar/1.jpg" alt="" />
-            </div>
-
-        </header>
-
-        <main class="main">
-            <div class="dashboard_container">
-                <div class="stepbox_claimrewards">
-                    <div class="stepbox">
-                        <h3>Today's Step</h3>
-                        <h1>8.450</h1>
-                        <div class="progress_bar">
-                            <img src="assets/icon/star.png" alt="star" id="star" />
-                            <div class="progress_text">
-                                <h3>8.450 points</h3>
-                                <img src="assets/images/progressbar.png" alt="" />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="claimrewards">
-                        <h3>Claim Your Rewards</h3>
-
-                        <div class="voucher_small">
-                            <div class="gift_icon">
-                                <img
-                                        src="assets/icon/gift-icon.png"
-                                        alt="gift"
-                                        id="gift"
-                                />
-                            </div>
-                            <div class="text_voucher">
-                                <h4>Voucher</h4>
-                                <p>10.000 pts</p>
-                            </div>
-                        </div>
-
-                        <div class="discount_small">
-                            <div class="percent_icon">
-                                <img src="assets/icon/percent.png" alt="percent" />
-                            </div>
-                            <div class="text_discount">
-                                <h4>Discount Code</h4>
-                                <p>7.500 pts</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="graphic_container">
-                    <div class="graphic_dashboard">
-                        <div class="graphic_text">
-                            <h3>Weekly Activity</h3>
-                        </div>
-
-                        <div class="graphic_image">
-                            <img
-                                    src="assets/images/grafik_dash.png"
-                                    alt="gambar grafik"
-                            />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="achievement_container">
-                    <div class="achievement_text">
-                        <h3>Your Achievements</h3>
-                    </div>
-
-                    <div class="achievements_card">
-                        <div class="card_1">
-                            <div class="card1_content">
-                                <img src="assets/icon/medal.png" alt="" />
-                                <p>Daily Streaker</p>
-                            </div>
-                        </div>
-
-                        <div class="card_2">
-                            <div class="card2_content">
-                                <img src="assets/icon/target.png" alt="" />
-                                <p>Marathon Mover</p>
-                            </div>
-                        </div>
-
-                        <div class="card_3">
-                            <div class="card3_content">
-                                <img src="assets/icon/people.png" alt="" />
-                                <p>Social Sprinter</p>
-                            </div>
-                        </div>
-
-                        <div class="card_4">
-                            <div class="card4_content">
-                                <img src="assets/icon/sparkler.png" alt="" />
-                                <p>Point Collector</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </main>
+        </aside>
 
-        <footer>
+        <div class="right_area">
+            <header class="navbar">
+                <div class="nav_right">
+                    <!-- <div class="profile">Profile</div> -->
+                    <div class="nav_search">
+                        <img class="icon" src="assets/icon/search.png" alt="" />
+                        <input type="text" placeholder="Search rewards..." />
+                    </div>
+                    <img class="icon" src="assets/icon/bell.png" alt="" />
+
+                    <img class="avatar" src="assets/avatar/1.jpg" alt="" />
+                </div>
+
+            </header>
+
+            <!-- tinggal desain responsive untuk mobile di konten main -->
+            <main class="main">
+                <div class="dashboard_container">
+                    <div class="stepbox_claimrewards">
+                        <div class="stepbox">
+                            <h3>Today's Step</h3>
+                            <h1>8.450</h1>
+                            <div class="progress_bar">
+                                <img src="assets/icon/star.png" alt="star" id="star" />
+                                <div class="progress_text">
+                                    <h3>8.450 points</h3>
+                                    <img src="assets/images/progressbar.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="claimrewards">
+                            <h3>Claim Your Rewards</h3>
+
+                            <div class="voucher_small">
+                                <div class="gift_icon">
+                                    <img src="assets/icon/gift-icon.png" alt="gift" id="gift" />
+                                </div>
+                                <div class="text_voucher">
+                                    <h4>Voucher</h4>
+                                    <p>10.000 pts</p>
+                                </div>
+                            </div>
+
+                            <div class="discount_small">
+                                <div class="percent_icon">
+                                    <img src="assets/icon/percent.png" alt="percent" />
+                                </div>
+                                <div class="text_discount">
+                                    <h4>Discount Code</h4>
+                                    <p>7.500 pts</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graphic_container">
+                        <div class="graphic_dashboard">
+                            <div class="graphic_text">
+                                <h3>Weekly Activity</h3>
+                            </div>
+
+                            <div class="graphic_image">
+                                <img src="assets/images/grafik_dash.png" alt="gambar grafik" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="achievement_container">
+                        <div class="achievement_text">
+                            <h3>Your Achievements</h3>
+                        </div>
+
+                        <div class="achievements_card">
+                            <div class="card_1">
+                                <div class="card1_content">
+                                    <img src="assets/icon/medal.png" alt="" />
+                                    <p>Daily Streaker</p>
+                                </div>
+                            </div>
+
+                            <div class="card_2">
+                                <div class="card2_content">
+                                    <img src="assets/icon/target.png" alt="" />
+                                    <p>Marathon Mover</p>
+                                </div>
+                            </div>
+
+                            <div class="card_3">
+                                <div class="card3_content">
+                                    <img src="assets/icon/people.png" alt="" />
+                                    <p>Social Sprinter</p>
+                                </div>
+                            </div>
+
+                            <div class="card_4">
+                                <div class="card4_content">
+                                    <img src="assets/icon/sparkler.png" alt="" />
+                                    <p>Point Collector</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <footer>
                 <span>Resources</span>
                 <span>Legal</span>
                 <span>Contact Us</span>
-        </footer>
+            </footer>
+        </div>
     </div>
-</div>
+
+    <script src="assets/js/sidebar.js"></script>
 </body>
+
 </html>

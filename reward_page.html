@@ -6,15 +6,22 @@
     <title>StepUp Rewards</title>
     <link rel="stylesheet" href="style/reward.css" />
     <link rel="stylesheet" href="style_side_nav_main_footer.css" />
+    <link rel="stylesheet" href="style-responsive-layout.css">
+    <link rel="stylesheet" href="style/responsive_rewards_page.css">
   </head>
   <body>
     <div class="container">
-      <aside class="sidebar">
+      <aside class="sidebar active">
         <div class="logo-container">
-          <div class="logo-icon">
-            <img class="logo-image" src="assets/icon/logo.png" alt="" />
+          <div class="logo-left">
+            <div class="logo-icon">
+              <img class="logo-image" src="assets/icon/logo.png" alt="" />
+            </div>
+            <h2>StepUp</h2>
           </div>
-          <h2>StepUp</h2>
+          <button class="btn-side">
+            <img class="icon" src="assets/icon/icon-menu.png" alt="">
+          </button>
         </div>
 
         <div class="sidebar-content">
@@ -58,6 +65,13 @@
                   My Challenges
                 </a>
               </li>
+
+              <li>
+                <a href="community_feed.html" class="sidebar-link">
+                  <img class="icon" src="assets/icon/person.png" alt="" />
+                  Community
+                </a>
+              </li>
             </ul>
           </nav>
 
@@ -93,8 +107,10 @@
             <button id="view-history">View History</button>
           </div>
 
-          <section class="vouchers">
-            <h3>Exclusive Vouchers</h3>
+          <section class="vouchers-section">
+            <h3>Exclusive Vouchers
+              <a href="" class="see-all-link">See All</a>
+            </h3>
             <div class="card-grid">
               <article class="card">
                 <div class="card_image">
@@ -184,8 +200,10 @@
             </div>
           </section>
 
-          <section class="discounts">
-            <h3>Discount Codes</h3>
+          <section class="vouchers-section">
+            <h3>Discount Codes
+              <a href="" class="see-all-link">See All</a>
+            </h3>
             <div class="card-grid">
               <article class="card">
                 <div class="card_image">
@@ -275,4 +293,5 @@
       </div>
     </div>
   </body>
+  <script src="assets/js/sidebar.js"></script>
 </html>

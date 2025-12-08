@@ -1,0 +1,54 @@
+@media (max-width: 700px) {
+  .rank-wrapper {
+    background: #f5f8ff;
+    padding: 30px 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .rank-wrapper h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #1a1a1a;
+  }
+
+  .rank-card {
+    background: #ffffff;
+    padding: 25px 15px;
+    border-radius: 15px;
+    max-width: 350px;
+    margin: 0 auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .rank-numbers {
+    font-size: 32px;
+    color: #1a1a1a;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  .rank-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  }
+
+  .rank-name {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .rank-points {
+    font-size: 20px;
+    font-weight: 700;
+    color: #3366cc;
+  }
+}
