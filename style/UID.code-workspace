@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../UID"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "PROJEK_UID_ASESMEN_2"
+	}
+}

@@ -1,4 +1,8 @@
 
+*{
+  font-family: inter, sans-serif;
+}
+
 .card {
   background: #fff;
   padding: 25px;
@@ -121,9 +125,6 @@
   border: none;
 }
 
-.radio-group label {
-  margin-right: 20px;
-}
 
 .storage {
   display: flex;
