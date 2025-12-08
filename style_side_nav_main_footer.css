@@ -174,8 +174,8 @@ body {
 }
 
 footer {
-  text-align: center;
-  background-color: #ffffffff;
+  /* text-align: center; */
+  background-color: #F3F4F6FF;
   /* padding: 15px; */
   height: 200px;
   border-top: 1px solid #DEE1E6FF;
@@ -184,24 +184,22 @@ footer {
   justify-content: space-around;
 }
 
-.copyright-content {
-  padding: 20px;
-  background-color: #3366cc;
+.copyright-content span {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  gap: 10px;
 }
 
-.about-content {
-  padding: 20px;
-  background-color: aqua;
+.footer-content div {
+  margin-top: 10px;
 }
 
-.support-content {
-  padding: 20px;
-  background-color: blue;
-}
-
-.legal-content {
-  padding: 20px;
-  background-color: blueviolet;
+.footer-content div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  color: #565D6DFF;
 }
 
 .button_help {
