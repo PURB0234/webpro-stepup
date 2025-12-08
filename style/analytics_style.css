@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Montserrat:ital,wght@0,500;1,500&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+:root{
+    --dominant-color: #636ae8;
+    --primary-font: montserrat;
+
+}
+
+main{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 24px;
+    box-sizing: border-box;
+    font-family: inter, sans-serif;
+
+}
+.analytics-top-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 24px;
+    width: 100%;
+    margin-bottom: 200px;
+}
+
+.top-card-1,
+.top-card-2 {
+    background: #fff;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    box-sizing: border-box;
+}
+
+.top-card-1 h2, 
+.top-card-2 h2 {
+    font-family: var(--primary-font);
+    margin-bottom: 16px;
+    font-size: 18px;
+}
+
+.small-card-container-top {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.top-card-span {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.value-top {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--dominant-color);
+}
+.description-top{
+    font-size: 14px;
+    color: #6b7280;
+    /* margin-left: 32px; */
+}
+.icon-top{
+    padding-right: 20px;
+}
+.icon-top img{
+    width: 24px;
+    height: 24px;
+}
+.analytics-bottom-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 24px;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.card-bottom {
+    background: #fff;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+
+}
+
+.card-bottom-chart {
+    background: #fff;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.card-bottom-chart img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.icon-bottom img{
+    width: 32px;
+    height: 32px;
+}
+.top-card-2 img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
