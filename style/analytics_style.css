@@ -23,6 +23,8 @@ main{
     width: 100%;
     margin-bottom: 200px;
 }
+.top-card-1{
+}
 
 .top-card-1,
 .top-card-2 {
@@ -37,14 +39,14 @@ main{
 .top-card-2 h2 {
     font-family: var(--primary-font);
     margin-bottom: 16px;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .small-card-container-top {
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
-    margin-top: 8px;
+    margin-top: 200px;
 }
 
 .top-card-span {
@@ -54,12 +56,12 @@ main{
 }
 
 .value-top {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--dominant-color);
 }
 .description-top{
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #6b7280;
     /* margin-left: 32px; */
 }
@@ -79,6 +81,8 @@ main{
 }
 
 .card-bottom {
+    display: flex;
+    flex-direction: column;
     background: #fff;
     padding: 24px;
     border-radius: 16px;
@@ -98,6 +102,9 @@ main{
     height: auto;
     object-fit: contain;
 }
+.icon-bottom{
+    padding-bottom: 15px;
+}
 .icon-bottom img{
     width: 32px;
     height: 32px;
@@ -106,4 +113,27 @@ main{
     width: 100%;
     height: auto;
     object-fit: contain;
+}
+.chart-text h2{
+    font-family: var(--primary-font);
+    font-size: 1.125rem;
+}
+.description-bottom{
+    font-family: var(--primary-font);
+    padding-bottom: 10px;
+}
+.value{
+    font-family: var(--primary-font);
+    font-weight: 700;
+    color: black;
+    font-size: 1.5rem;
+}
+.unit{
+    font-family: var(--primary-font);
+}
+.percent-bottom{
+    padding-left: 5px;
+    font-family: var(--primary-font);
+    color : #22C55EFF;
+    font-weight: 500;
 }
