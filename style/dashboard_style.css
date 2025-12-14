@@ -1,229 +1,174 @@
-.stepbox{
-    border: 1px solid #ddd;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 12px;
-    font-family: Inter, sans-serif;
-    padding: 10px;
+.stepbox {
+  border: 1px solid #ddd;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 12px;
+  font-family: Inter, sans-serif;
+  padding: 10px;
 }
-.stepbox h1{
-    color: #3366cc;
-    padding: 10px;
+.stepbox h1 {
+  color: #3366cc;
+  padding: 10px;
 }
-.stepbox image{
-    width: 50px;
-    height: 10px;
-    padding: 10px;
+.stepbox image {
+  width: 50px;
+  height: 10px;
+  padding: 10px;
 }
-.stepbox h3{
-    padding: 5px;
+.stepbox h3 {
+  padding: 5px;
 }
-.progress_text{
-    display: flex; flex-direction: column;
-    padding: 10px;
+.progress_text {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
-.progress_bar{
-    display: flex; flex-direction: row;
-    margin: 10px;
+.progress_bar {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
 }
-#star{
-    border: 1px solid #FF8C00FF;
-    background-color: #FF8C00FF;
-    border-radius: 8px;
-    padding: 10px;
-    align-self: center;
-    width: 40px;
-    height: 40px;
+#star {
+  border: 1px solid #ff8c00ff;
+  background-color: #ff8c00ff;
+  border-radius: 8px;
+  padding: 10px;
+  align-self: center;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
-.stepbox_claimrewards{
-    display: flex; flex-direction: row;
+.stepbox_claimrewards {
+  display: flex;
+  flex-direction: row;
 }
 .claimrewards {
-    display: flex; flex-direction: column;
-    padding: 10px;
-    width: 100%;
-    margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+  margin-left: 70px;
 }
 .claimrewards h3 {
-    font-family: Montserrat, sans-serif;
-    margin: 10px;
+  font-family: Montserrat, sans-serif;
+  margin: 0.625rem;
 }
-.voucher_small{
-    display: flex; flex-direction: row;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    width: 100%;
-    padding: 10px;
-    margin: 10px;
+.voucher_small {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
 }
-.text_voucher{
-    display: flex; flex-direction: column;
-    padding: 10px;
+.text_voucher {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
-.discount_small{
-    display: flex; flex-direction: row;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    width: 100%;
-    padding: 10px;
-    margin: 10px;
+.discount_small {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
 }
-.text_discount{
-    display: flex; flex-direction: column;
-    padding: 10px;
+.text_discount {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
-.claimrewards p{
-    font-size: 14px;
+.claimrewards p {
+  font-size: 1rem;
 }
-.gift_icon{
-    display: flex;
-    justify-content: center;
+.gift_icon {
+  display: flex;
+  justify-content: center;
 }
-.gift_icon img{
-    border: 1px solid #FF8C00FF;
-    background-color: #FF8C00FF;
-    border-radius: 8px;
-    padding: 10px;
-    align-self: center;
-    width: 40px;
-    height: 40px;
+.gift_icon img {
+  border: 1px solid #ff8c00ff;
+  background-color: #ff8c00ff;
+  border-radius: 8px;
+  padding: 10px;
+  align-self: center;
+  width: 2.5rem;
+  height: 2.5rem;
 }
-.percent_icon{
-    display: flex;
-    justify-content: center;
+.percent_icon {
+  display: flex;
+  justify-content: center;
 }
-.percent_icon img{
-    border: 1px solid #FF8C00FF;
-    background-color: #FF8C00FF;
-    border-radius: 8px;
-    padding: 10px;
-    align-self: center;
-    width: 40px;
-    height: 40px;
+.percent_icon img {
+  border: 1px solid #ff8c00ff;
+  background-color: #ff8c00ff;
+  border-radius: 8px;
+  padding: 10px;
+  align-self: center;
+  width: 40px;
+  height: 40px;
 }
 .graphic_container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 45px;
-    padding: 15px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  width: 100%;
 }
-.graphic_text{
-    display: flex; justify-content: flex-start;
-    font-family: inter, sans-serif;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    margin-left: 10px;
+.graphic_text {
+  display: flex;
+  justify-content: flex-start;
+  font-family: inter, sans-serif;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  margin-left: 10px;
 }
-.graphic_image{
-    width: 976px;
-    height: 250px;
+.graphic_image {
+  width: 61rem;
+  height: 15.625rem;
 }
-.achievement_container{
-    display: flex; flex-direction: column;
-    margin-top: 45px;
+.achievement_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  margin-top: 2rem;
+  width: 100%;
 }
-.achievements_card{
-    display: flex; flex-direction: row;
-    padding-left: 10px;
-    padding-right: 10px;
+
+.achievements_card {
+  display: flex;
+  flex-direction: row;
 }
-.achievement_text{
-    font-family: Inter, sans-serif;
-    margin-left: 30px;
-    margin-bottom: 10px;
+.achievement_text {
+  font-family: Inter, sans-serif;
+  margin-left: 30px;
+  margin-bottom: 10px;
 }
-.card_1{
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    width: 248px;
-    height: 92px;
-    margin: 10px;
-    display: flex; flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  width: 100rem;
+  height: 100%;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
-.card_1 img{
-    width: 32px;
-    height: 32px;
+.card img {
+  width: 32px;
+  height: 32px;
 }
-.card_1 p{
-    font-family: Inter, sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    padding-top: 8px;
-}
-.card_2{
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    width: 248px;
-    height: 92px;
-    margin: 10px;
-    display: flex; flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.card_2 img{
-    width: 32px;
-    height: 32px;
-}
-.card_2 p{
-    font-family: Inter, sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    padding-top: 8px;
-}
-.card_3{
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    width: 248px;
-    height: 92px;
-    margin: 10px;
-    display: flex; flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.card_3 img{
-    width: 32px;
-    height: 32px;
-}
-.card_3 p{
-    font-family: Inter, sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    padding-top: 8px;
-}
-.card_4{
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    width: 248px;
-    height: 92px;
-    margin: 10px;
-    display: flex; flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.card_4 img{
-    width: 32px;
-    height: 32px;
-}
-.card_4 p{
-    font-family: Inter, sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    padding-top: 8px;
+.card p {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding-top: 8px;
 }

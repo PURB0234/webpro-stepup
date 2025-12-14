@@ -3,10 +3,12 @@
 
 :root{
     --primary-font: montserrat;
-}
+  }
+
 .history-bar-menu{
     display: flex;
     align-items: center;
+    margin-left: 2rem;
 }
 .history-header p{
     font-family: var(--primary-font);
@@ -17,6 +19,7 @@
 }
 .history-header{
     margin-bottom: 2rem;
+    margin-left: 2rem;
 }
 .history-search-bar{
     display: flex;
@@ -79,9 +82,9 @@
   gap: 0.375rem;           /* 6px */
 }
 
-.filter summary::-webkit-details-marker {
+/* .filter summary::-webkit-details-marker {
   display: none;
-}
+} */
 
 .filter summary:hover {
   background-color: #f5f5f5;
@@ -96,26 +99,109 @@
 
 /* Dropdown menu */
 .filter-menu {
-  position: absolute;
+  /* position: absolute;
   top: 110%;
-  left: 0;
+  left: 0; */
 
   background: white;
-  border: 0.0625rem solid #ddd; /* 1px */
-  border-radius: 0.625rem;      /* 10px */
+  border: 0.0625rem solid #ddd;
+  border-radius: 0.625rem;      
 
   list-style: none;
-  padding: 0.5rem 0;       /* 8px 0 */
-  min-width: 10rem;        /* 160px */
+  padding: 0.5rem 0;       
+  min-width: 10rem;        
 
   box-shadow: 0 0.25rem 0.625rem rgba(0,0,0,0.1);
 }
 
 .filter-menu li {
-  padding: 0.5rem 0.875rem; /* 8px 14px */
+  padding: 0.5rem 0.875rem;
   cursor: pointer;
 }
 
 .filter-menu li:hover {
   background-color: #f0f0f0;
 }
+.card-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    gap: 1.5rem;
+}
+
+.card{
+    background: #fff;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  margin-top: 2rem;
+  /* margin-bottom: 2rem; */
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  box-shadow: 0 0.5rem 1.25rem rgba(0,0,0,0.05);
+}
+.route-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.route-title{
+    font-family: var(--primary-font);
+}
+.route-card-header time {
+  font-family: var(--primary-font);
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.badge {
+  font-family: var(--primary-font);
+  font-size: 0.6875rem;
+  padding: 0.25rem 0.625rem;
+  border-radius: 1rem;
+  background: #f1f5f9;
+}
+.route-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.route-stats .label {
+  font-family: var(--primary-font);
+  font-size: 0.6875rem;
+  color: #6b7280;
+}
+
+.route-stats .value {
+  font-family: var(--primary-font);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.route-image img {
+  width: 100%;
+  height: 7.5rem;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+.route-card-footer {
+  height: auto;
+}
+
+.btn-primary {
+    width: 100%;
+  padding: 0.625rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: #6366f1;
+  color: white;
+  font-family: var(--primary-font);
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #4f46e5;
+}
+
