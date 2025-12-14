@@ -14,7 +14,8 @@ body {
 
 .container {
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
+  /* overflow: hidden; */
 }
 
 .sidebar {
@@ -25,6 +26,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   border-right: 1px solid #ddd;
+  height: 100vh;
+  /* overflow-y: auto; */
 }
 
 .logo-container {
@@ -128,7 +131,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 0 30px;
+  padding: 10px 30px;
   border-bottom: 1px solid #ddd;
 }
 
@@ -167,10 +170,13 @@ body {
 }
 
 .main {
-  flex: 1;
+  /* flex: 1; */
   background-color: #FAFAFBFF;
-  padding: 30px 40px;
+  /* padding: 30px 40px; */
   overflow-y: auto;
+}
+.main-content {
+  padding: 30px 40px;
 }
 
 footer {
@@ -182,6 +188,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  /* margin-top: 50px; */
 }
 
 .copyright-content span {
