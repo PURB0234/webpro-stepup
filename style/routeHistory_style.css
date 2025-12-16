@@ -62,10 +62,6 @@
   flex-wrap: wrap;
 }
 
-.filter {
-  position: relative;
-}
-
 .filter summary {
   list-style: none;
   cursor: pointer;
@@ -100,7 +96,6 @@
 /* Dropdown menu */
 .filter-menu {
   position: absolute;
-  left: 0;
 
   background: white;
   border: 0.0625rem solid #ddd;
@@ -123,7 +118,7 @@
 }
 .card-section{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
     gap: 1.5rem;
 }
 
