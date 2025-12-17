@@ -1,306 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StepUp - Settings</title>
-    <link rel="stylesheet" href="style/settings.css">
-    <link rel="stylesheet" href="style_side_nav_main_footer.css">
-    <link rel="stylesheet" href="style-responsive-layout.css">
-</head>
+    <link rel="stylesheet" href="style/settings.css" />
+    <link rel="stylesheet" href="style_side_nav_main_footer.css" />
+    <link rel="stylesheet" href="style-responsive-layout.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-
-        <aside class="sidebar active">
-            <div class="logo-container">
-                <div class="logo-left">
-                    <div class="logo-icon">
-                        <img class="logo-image" src="assets/icon/logo.png" alt="" />
-                    </div>
-                    <h2>StepUp</h2>
-                </div>
-                <button class="btn-side">
-                    <img class="icon" src="assets/icon/icon-menu.png" alt="">
-                </button>
+      <aside class="sidebar active">
+        <div class="logo-container">
+          <div class="logo-left">
+            <div class="logo-icon">
+              <img class="logo-image" src="assets/icon/logo.png" alt="" />
             </div>
-
-            <div class="sidebar-content">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="dashboard.html" class="sidebar-link">
-                                <img class="icon" src="assets/icon/grid.png" alt="">
-                                Dashboard
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="reward_page.html" class="sidebar-link">
-                                <img class="icon" src="assets/icon/gift.png" alt="">
-                                Rewards
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="leaderboard_page.html" class="sidebar-link">
-                                <img class="icon" src="assets/icon/cup.png" alt="">
-                                Leaderboard
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="sidebar-link" style="background-color:#eee;">
-                                <img class="icon" src="assets/icon/gear.png" alt="">
-                                Settings
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="event.html" class="sidebar-link">
-                                <img class="icon" src="assets/icon/dumbel.png" alt="">
-                                My Challenges
-                            </a>
-                        </li>
-                        <li>
-                            <a href="community_feed.html" class="sidebar-link">
-                                <img class="icon" src="assets/icon/person.png" alt="" />
-                                Community
-                            </a>
-                        </li>
-                        <li>
-                            <a href="analytics.html" class="sidebar-link">
-                                <img class="icon" src="assets/icon/chart-2.png" alt="" />
-                                Analytics
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <div class="container_logout">
-                    <button class="button_help">Help & Support</button>
-                    <a href="index.html" class="logout">
-                        <img class="icon" src="assets/icon/icon_logout.png" alt="">
-                        Log Out
-                    </a>
-                </div>
-            </div>
-        </aside>
-
-
-
-        <div class="right_area">
-
-            <header class="navbar">
-                <div class="nav_right">
-                    <div class="nav_search">
-                        <img class="icon" src="assets/icon/search.png" alt="">
-                        <input type="text" placeholder="Search...">
-                    </div>
-
-                    <img class="icon" src="assets/icon/bell.png" alt="">
-                    <img class="avatar" src="assets/avatar/1.jpg" alt="">
-                </div>
-            </header>
-
-
-
-            <!-- tinggal desain responsive untuk mobile di konten main -->
-            <main class="main">
-                <div class="main-content">
-
-
-
-
-                    <section class="settings">
-                        <h1>Settings</h1>
-                        <p>Manage your profile, notification preferences, and application settings.</p>
-    
-    
-                        <div class="card">
-                            <h2>Profile Information</h2>
-                            <p>Manage your personal details and account security.</p>
-    
-                            <div class="profile-info">
-                                <img src="assets/avatar/1.jpg" alt="Profile">
-                                <div class="info-form">
-                                    <label>Full Name</label>
-                                    <input type="text" value="Evan Patrick">
-    
-                                    <label>Email</label>
-                                    <input type="email" value="evan.patrick@student.edu">
-    
-                                    <label>Major</label>
-                                    <input type="text" value="Computer Science">
-    
-                                    <label>Student ID</label>
-                                    <input type="text" value="CS10203">
-                                </div>
-                            </div>
-    
-                            <label>Bio</label>
-                            <textarea
-                                rows="3">Fourth-year Computer Science student passionate about solving practical problems using software engineering.</textarea>
-    
-                            <h3>Password & Security</h3>
-                            <label>Current Password</label>
-                            <input type="password" placeholder="Enter current password">
-    
-                            <label>New Password</label>
-                            <input type="password" placeholder="Enter new password">
-    
-                            <label>Confirm New Password</label>
-                            <input type="password" placeholder="Re-enter new password">
-    
-                            <div class="two-factor">
-                                <p>Two-Factor Authentication</p>
-                                <label class="switch">
-                                    <input type="checkbox" checked>
-                                    <span class="slider"></span>
-                                </label>
-                            </div>
-    
-                            <div class="button-row">
-                                <button class="cancel">Cancel</button>
-                                <button class="save">Save Changes</button>
-                            </div>
-                        </div>
-    
-                        <div class="card">
-                            <h2>Notification Preferences</h2>
-                            <p>Control how you receive updates and announcements.</p>
-    
-                            <div class="notif-section">
-                                <h3>Email Notifications</h3>
-                                <label><input type="checkbox" checked> Course Announcements</label>
-                                <label><input type="checkbox" checked> Assignment Reminders</label>
-                                <label><input type="checkbox"> Promotional Offers</label>
-                            </div>
-    
-                            <div class="notif-section">
-                                <h3>In-App Notifications</h3>
-                                <label><input type="checkbox" checked> New Messages</label>
-                                <label><input type="checkbox"> Group Activity</label>
-                            </div>
-    
-                            <button class="save-btn">Save Preferences</button>
-                        </div>
-    
-                        <div class="card">
-                            <h2>Application Settings</h2>
-    
-                            <div class="setting-section">
-                                <h3>Display</h3>
-                                <p>App Theme</p>
-                                <small>Choose between light or dark mode.</small>
-    
-                                <div class="radio-group">
-                                    <label><input type="radio" name="theme" checked> Light</label>
-                                    <label><input type="radio" name="theme"> Dark</label>
-                                </div>
-                            </div>
-    
-                            <div class="setting-section">
-                                <h3>Localization</h3>
-                                <p>Language</p>
-                                <small>Select your preferred language for the application.</small>
-                                <select>
-                                    <option>English</option>
-                                    <option>Indonesian</option>
-                                </select>
-                            </div>
-    
-                            <div class="setting-section">
-                                <h3>Data & Storage</h3>
-                                <p>Data Usage</p>
-                                <small>Current application data storage on your device.</small>
-    
-                                <div class="storage">
-                                    <input type="text" value="255 MB" readonly>
-                                    <button class="clear-cache">Clear Cache</button>
-                                </div>
-                            </div>
-    
-                            <div class="setting-section">
-                                <h3>Privacy</h3>
-                                <p>Share Usage Data</p>
-                                <small>Help us improve by sharing anonymous usage statistics.</small>
-    
-                                <label class="switch">
-                                    <input type="checkbox" checked>
-                                    <span class="slider"></span>
-                                </label>
-    
-                                <div class="links">
-                                    <a href="#">View Terms of Service</a>
-                                    <a href="#">View Privacy Policy</a>
-                                </div>
-                            </div>
-    
-                            <button class="save-btn">Save Settings</button>
-                        </div>
-    
-                        <!-- === HELP === -->
-                        <div class="card">
-                            <h2>Help & Support</h2>
-                            <p>Find answers or contact our support team.</p>
-    
-                            <button class="faq">Visit FAQ</button>
-                            <button class="contact">Contact Support</button>
-                        </div>
-                    </section>
-                </div>
-            
-            
-                <footer>
-               <div class="copyright-content">
-                 <span>
-                   <img class="icon" src="assets/icon/copyright.png" alt="">
-                   2025 StepUp Analytics. All rights reserved.
-                 </span><br>
-                 <span>
-                   <img class="icon" src="assets/icon/twitter.png" alt="">
-                   <img class="icon" src="assets/icon/instagram.png" alt="">
-                   <img class="icon" src="assets/icon/facebook.png" alt="">
-                 </span>
-               </div>
-     
-               <div class="footer-content">
-                 <h5>About Us</h5>
-                 <div>
-                   <p>Our Story</p>
-                   <p>Careers</p>
-                   <p>Press</p>
-                 </div>
-               </div>
-               
-               <div class="footer-content">
-                 <h5>Support</h5>
-                 <div>
-                   <p>FAQ</p>
-                   <p>Help Center</p>
-                   <p>Contact Us</p>
-                 </div>
-               </div>
-               
-               <div class="footer-content">
-                 <h5>Legal</h5>
-                 <div>
-                   <p>Privacy Policy</p>
-                   <p>Terms of Service</p>
-                   <p>Cookie Policy</p>
-                 </div>
-               </div>
-             </footer>
-            </main>
-
-
-
+            <h2>StepUp</h2>
+          </div>
+          <button class="btn-side">
+            <img class="icon" src="assets/icon/icon-menu.png" alt="" />
+          </button>
         </div>
+
+        <div class="sidebar-content">
+          <nav>
+            <ul>
+              <li>
+                <a href="dashboard.html" class="sidebar-link">
+                  <img class="icon" src="assets/icon/grid.png" alt="" />
+                  Dashboard
+                </a>
+              </li>
+
+              <li>
+                <a href="reward_page.html" class="sidebar-link">
+                  <img class="icon" src="assets/icon/gift.png" alt="" />
+                  Rewards
+                </a>
+              </li>
+
+              <li>
+                <a href="leaderboard_page.html" class="sidebar-link">
+                  <img class="icon" src="assets/icon/cup.png" alt="" />
+                  Leaderboard
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="sidebar-link" style="background-color: #eee">
+                  <img class="icon" src="assets/icon/gear.png" alt="" />
+                  Settings
+                </a>
+              </li>
+
+              <li>
+                <a href="event.html" class="sidebar-link">
+                  <img class="icon" src="assets/icon/dumbel.png" alt="" />
+                  My Challenges
+                </a>
+              </li>
+              <li>
+                <a href="community_feed.html" class="sidebar-link">
+                  <img class="icon" src="assets/icon/person.png" alt="" />
+                  Community
+                </a>
+              </li>
+              <li>
+                <a href="analytics.html" class="sidebar-link">
+                  <img class="icon" src="assets/icon/chart-2.png" alt="" />
+                  Analytics
+                </a>
+              </li>
+              <li>
+                <a href="collections.html" class="sidebar-link">
+                  <img class="icon" src="assets/icon/layer.png" alt="" />
+                  Collections
+                </a>
+              </li>
+              <li>
+                <a href="routeHistory.html" class="sidebar-link">
+                  <img class="icon" src="assets/icon/history.png" alt="" />
+                  Route History
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="container_logout">
+            <button class="button_help">Help & Support</button>
+            <a href="index.html" class="logout">
+              <img class="icon" src="assets/icon/icon_logout.png" alt="" />
+              Log Out
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <div class="right_area">
+        <header class="navbar">
+          <div class="nav_right">
+            <div class="nav_search">
+              <img class="icon" src="assets/icon/search.png" alt="" />
+              <input type="text" placeholder="Search..." />
+            </div>
+
+            <img class="icon" src="assets/icon/bell.png" alt="" />
+            <img class="avatar" src="assets/avatar/1.jpg" alt="" />
+          </div>
+        </header>
+
+        <!-- tinggal desain responsive untuk mobile di konten main -->
+        <main class="main">
+          <div class="main-content">
+            <section class="settings">
+              <h1>Settings</h1>
+              <p>
+                Manage your profile, notification preferences, and application
+                settings.
+              </p>
+
+              <div class="card">
+                <h2>Profile Information</h2>
+                <p>Manage your personal details and account security.</p>
+
+                <div class="profile-info">
+                  <img src="assets/avatar/1.jpg" alt="Profile" />
+                  <div class="info-form">
+                    <label>Full Name</label>
+                    <input type="text" value="Evan Patrick" />
+
+                    <label>Email</label>
+                    <input type="email" value="evan.patrick@student.edu" />
+
+                    <label>Major</label>
+                    <input type="text" value="Computer Science" />
+
+                    <label>Student ID</label>
+                    <input type="text" value="CS10203" />
+                  </div>
+                </div>
+
+                <label>Bio</label>
+                <textarea rows="3">
+Fourth-year Computer Science student passionate about solving practical problems using software engineering.</textarea
+                >
+
+                <h3>Password & Security</h3>
+                <label>Current Password</label>
+                <input type="password" placeholder="Enter current password" />
+
+                <label>New Password</label>
+                <input type="password" placeholder="Enter new password" />
+
+                <label>Confirm New Password</label>
+                <input type="password" placeholder="Re-enter new password" />
+
+                <div class="two-factor">
+                  <p>Two-Factor Authentication</p>
+                  <label class="switch">
+                    <input type="checkbox" checked />
+                    <span class="slider"></span>
+                  </label>
+                </div>
+
+                <div class="button-row">
+                  <button class="cancel">Cancel</button>
+                  <button class="save">Save Changes</button>
+                </div>
+              </div>
+
+              <div class="card">
+                <h2>Notification Preferences</h2>
+                <p>Control how you receive updates and announcements.</p>
+
+                <div class="notif-section">
+                  <h3>Email Notifications</h3>
+                  <label
+                    ><input type="checkbox" checked /> Course
+                    Announcements</label
+                  >
+                  <label
+                    ><input type="checkbox" checked /> Assignment
+                    Reminders</label
+                  >
+                  <label><input type="checkbox" /> Promotional Offers</label>
+                </div>
+
+                <div class="notif-section">
+                  <h3>In-App Notifications</h3>
+                  <label><input type="checkbox" checked /> New Messages</label>
+                  <label><input type="checkbox" /> Group Activity</label>
+                </div>
+
+                <button class="save-btn">Save Preferences</button>
+              </div>
+
+              <div class="card">
+                <h2>Application Settings</h2>
+
+                <div class="setting-section">
+                  <h3>Display</h3>
+                  <p>App Theme</p>
+                  <small>Choose between light or dark mode.</small>
+
+                  <div class="radio-group">
+                    <label
+                      ><input type="radio" name="theme" checked /> Light</label
+                    >
+                    <label><input type="radio" name="theme" /> Dark</label>
+                  </div>
+                </div>
+
+                <div class="setting-section">
+                  <h3>Localization</h3>
+                  <p>Language</p>
+                  <small
+                    >Select your preferred language for the application.</small
+                  >
+                  <select>
+                    <option>English</option>
+                    <option>Indonesian</option>
+                  </select>
+                </div>
+
+                <div class="setting-section">
+                  <h3>Data & Storage</h3>
+                  <p>Data Usage</p>
+                  <small
+                    >Current application data storage on your device.</small
+                  >
+
+                  <div class="storage">
+                    <input type="text" value="255 MB" readonly />
+                    <button class="clear-cache">Clear Cache</button>
+                  </div>
+                </div>
+
+                <div class="setting-section">
+                  <h3>Privacy</h3>
+                  <p>Share Usage Data</p>
+                  <small
+                    >Help us improve by sharing anonymous usage
+                    statistics.</small
+                  >
+
+                  <label class="switch">
+                    <input type="checkbox" checked />
+                    <span class="slider"></span>
+                  </label>
+
+                  <div class="links">
+                    <a href="#">View Terms of Service</a>
+                    <a href="#">View Privacy Policy</a>
+                  </div>
+                </div>
+
+                <button class="save-btn">Save Settings</button>
+              </div>
+
+              <!-- === HELP === -->
+              <div class="card">
+                <h2>Help & Support</h2>
+                <p>Find answers or contact our support team.</p>
+
+                <button class="faq">Visit FAQ</button>
+                <button class="contact">Contact Support</button>
+              </div>
+            </section>
+          </div>
+
+          <footer>
+            <div class="copyright-content">
+              <span>
+                <img class="icon" src="assets/icon/copyright.png" alt="" />
+                2025 StepUp Analytics. All rights reserved. </span
+              ><br />
+              <span>
+                <img class="icon" src="assets/icon/twitter.png" alt="" />
+                <img class="icon" src="assets/icon/instagram.png" alt="" />
+                <img class="icon" src="assets/icon/facebook.png" alt="" />
+              </span>
+            </div>
+
+            <div class="footer-content">
+              <h5>About Us</h5>
+              <div>
+                <p>Our Story</p>
+                <p>Careers</p>
+                <p>Press</p>
+              </div>
+            </div>
+
+            <div class="footer-content">
+              <h5>Support</h5>
+              <div>
+                <p>FAQ</p>
+                <p>Help Center</p>
+                <p>Contact Us</p>
+              </div>
+            </div>
+
+            <div class="footer-content">
+              <h5>Legal</h5>
+              <div>
+                <p>Privacy Policy</p>
+                <p>Terms of Service</p>
+                <p>Cookie Policy</p>
+              </div>
+            </div>
+          </footer>
+        </main>
+      </div>
     </div>
 
     <script src="assets/js/sidebar.js"></script>
-</body>
-
+  </body>
 </html>
