@@ -1,0 +1,41 @@
+@media screen and (max-width: 768px) {
+  .stepbox {
+    border: 1px solid #ddd;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 12px;
+    font-family: Inter, sans-serif;
+    padding: 10px;
+  }
+  .stepbox h1 {
+    color: #3366cc;
+    padding: 10px;
+  }
+  .stepbox img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  .stepbox h3 {
+    padding: 5px;
+  }
+  .graphic_image{
+    max-width: 100%;
+    object-fit: contain;
+    height: auto;
+  }
+   .stepbox_claimrewards {
+    /* display: grid; */
+    grid-template-columns: 1fr;
+  }
+  .claimrewards {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .stepbox {
+    width: 100%;
+  }
+    
+  
+}

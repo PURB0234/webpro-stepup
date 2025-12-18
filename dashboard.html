@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style/dashboard_style.css" />
     <link rel="stylesheet" href="style_side_nav_main_footer.css" />
     <link rel="stylesheet" href="style-responsive-layout.css" />
+    <link rel="stylesheet" href="responsive_dashboard_style.css" />
   </head>
 
   <body>
@@ -124,7 +125,11 @@
                     <img src="assets/icon/star.png" alt="star" id="star" />
                     <div class="progress_text">
                       <h3>8.450 points</h3>
-                      <img src="assets/images/progressbar.png" alt="" />
+                      <img
+                        src="assets/images/progressbar.png"
+                        alt=""
+                        class="progress_bar_image"
+                      />
                     </div>
                   </div>
                 </div>
@@ -132,27 +137,29 @@
                 <div class="claimrewards">
                   <h3>Claim Your Rewards</h3>
 
-                  <div class="voucher_small">
-                    <div class="gift_icon">
-                      <img
-                        src="assets/icon/gift-icon.png"
-                        alt="gift"
-                        id="gift"
-                      />
+                  <div class="claimrewards_card">
+                    <div class="voucher_small">
+                      <div class="gift_icon">
+                        <img
+                          src="assets/icon/gift-icon.png"
+                          alt="gift"
+                          id="gift"
+                        />
+                      </div>
+                      <div class="text_voucher">
+                        <h4>Voucher</h4>
+                        <p>10.000 pts</p>
+                      </div>
                     </div>
-                    <div class="text_voucher">
-                      <h4>Voucher</h4>
-                      <p>10.000 pts</p>
-                    </div>
-                  </div>
 
-                  <div class="discount_small">
-                    <div class="percent_icon">
-                      <img src="assets/icon/percent.png" alt="percent" />
-                    </div>
-                    <div class="text_discount">
-                      <h4>Discount Code</h4>
-                      <p>7.500 pts</p>
+                    <div class="discount_small">
+                      <div class="percent_icon">
+                        <img src="assets/icon/percent.png" alt="percent" />
+                      </div>
+                      <div class="text_discount">
+                        <h4>Discount Code</h4>
+                        <p>7.500 pts</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -163,11 +170,8 @@
                     <h3>Weekly Activity</h3>
                   </div>
 
-                  <div class="graphic_image">
-                    <img
-                      src="assets/images/grafik_dash.png"
-                      alt="gambar grafik"
-                    />
+                  <div class="graphic">
+                    <img src="assets/images/grafik_dash.png" alt="gambar grafik" class="graphic_image"/>
                   </div>
                 </div>
               </div>

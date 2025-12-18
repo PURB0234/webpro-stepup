@@ -10,9 +10,13 @@
   color: #3366cc;
   padding: 10px;
 }
+.progress_bar_image {
+  width: 14rem;
+  height: auto;
+}
 .stepbox image {
-  width: 50px;
-  height: 10px;
+  width: 100%;
+  height: auto;
   padding: 10px;
 }
 .stepbox h3 {
@@ -25,7 +29,7 @@
 }
 .progress_bar {
   display: flex;
-  flex-direction: row;
+
   margin: 10px;
 }
 #star {
@@ -37,17 +41,22 @@
   width: 2.5rem;
   height: 2.5rem;
 }
+.claimrewards_card{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
 
 .stepbox_claimrewards {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
 }
 .claimrewards {
   display: flex;
   flex-direction: column;
   padding: 10px;
   width: 100%;
-  margin-left: 70px;
 }
 .claimrewards h3 {
   font-family: Montserrat, sans-serif;
@@ -131,19 +140,22 @@
   margin-left: 10px;
 }
 .graphic_image {
-  width: 61rem;
-  height: 15.625rem;
+  max-width: 100%;
+  object-fit: contain;
+  height: auto;
 }
 .achievement_container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
 
 .achievements_card {
-  display: flex;
-  flex-direction: row;
+   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  width: 100%;  
 }
 .achievement_text {
   font-family: Inter, sans-serif;
@@ -154,7 +166,6 @@
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 12px;
-  width: 100rem;
   height: 100%;
   margin: 1rem;
   display: flex;
