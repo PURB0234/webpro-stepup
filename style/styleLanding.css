@@ -1,128 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 * {
-    margin : 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-@media (max-width: 700px){
-    body{
-        font-size: 100%;
-    }
-    nav{
-        display: flex;
-    }
+
+.stepup {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../assets/images/walking.jpg") center/cover;
 }
-.stepup{
-    width: 100%;
-    min-height: 100vh;
-    background-image: url("../assets/images/walking.jpg");
-    background-position: center;
-    background-size: cover;
-    overflow: hidden;
+
+/* ===== NAVBAR ===== */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background-color: #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
-nav{
-    padding : 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: white;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+
+.logo {
+  width: 180px;
 }
-.logo{
-    width : 200px;
-    padding-left: 20px;
-    margin-left: 15px;
+
+.nav-links li {
+  display: inline-block;
+  margin: 0 12px;
 }
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 15px;
+
+.nav-links a,
+.login-btn {
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  color: #333;
 }
-nav ul li a{
-    text-decoration: none;
-    color: #333;
-    font-weight: 400;
-    font-family: Montserrat, sans-serif;
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-.login-btn{
-    text-decoration: none;
-    font-family: Montserrat, sans-serif;
-    color: #333;
-    margin-right: 15px;
-    font-weight: 400;
+
+.btn {
+  padding: 12px 36px;
+  background-color: #3366cc;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  transition: 0.3s;
 }
-.btn{
-    display: inline-block;
-    font-family: Montserrat, sans-serif;
-    text-decoration: none;
-    padding: 14px 40px;
-    color: #fff;
-    background-color: #3366ccff;
-    border-radius: 30px;
-    border-top-right-radius: 0px;
-    margin-right: 15px;
-    transition: 0.5s;
+
+.btn:hover {
+  border-top-right-radius: 30px;
 }
-.content{
-    margin-top: 10%;
-    margin-left: 5%;
-    max-width: 37.5rem;
+
+/* ===== HERO CONTENT ===== */
+.content {
+  margin-top: 10%;
+  margin-left: 5%;
+  max-width: 600px;
 }
-.content h1{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 50px;
-    color: #ffffff;
+
+.content h1 {
+  font-size: 48px;
+  color: #fff;
+  font-family: Montserrat, sans-serif;
 }
-.content p{
-    font-family: 'Montserrat', sans-serif;
-    text-indent: 10px;  
-    padding : 25px 0px 25px;
-    margin: 10px 0px 30px;
-    color: #ffffff;
-    animation-delay: 0.5s;
+
+.content p {
+  color: #fff;
+  margin: 20px 0;
+  font-family: Montserrat, sans-serif;
 }
-.content .btn{
-    padding : 15px 80px;
-    font-size: 16px;
-    animation-delay: 1s;
+
+.anim {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveup 0.5s ease forwards;
 }
-.btn:hover{
-    border-top-right-radius: 30px;
-}
-    .anim{
-        opacity: 0;
-        transform: translateY(30px);
-        animation: moveup 0.5s linear forwards;
-    }
-@keyframes moveup{
-    100%{
-        opacity: 1;
-        transform: translateY(-10px);
-    }
-}
-.container{
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    color: #333;
-    background-color: #fff;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-}
-.footer-content{
-    padding : 5px 10px;
-}
-.list{
-    padding: 10px;
-}
-.list a{
-    text-decoration: none;
-}
-.list li{
-    list-style: none;
+
+@keyframes moveup {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

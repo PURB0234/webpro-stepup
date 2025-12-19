@@ -62,7 +62,7 @@
   font-family: Montserrat, sans-serif;
   margin: 0.625rem;
 }
-.voucher_small {
+.claimrewards_icon_small {
   display: flex;
   flex-direction: row;
   background-color: #fff;
@@ -72,34 +72,19 @@
   padding: 10px;
   margin: 10px;
 }
-.text_voucher {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-}
-.discount_small {
-  display: flex;
-  flex-direction: row;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  width: 100%;
-  padding: 10px;
-  margin: 10px;
-}
-.text_discount {
+.claimrewards_text_small {
   display: flex;
   flex-direction: column;
   padding: 10px;
 }
 .claimrewards p {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
-.gift_icon {
+.icon_small {
   display: flex;
   justify-content: center;
 }
-.gift_icon img {
+.icon_small img {
   border: 1px solid #ff8c00ff;
   background-color: #ff8c00ff;
   border-radius: 8px;
@@ -107,19 +92,6 @@
   align-self: center;
   width: 2.5rem;
   height: 2.5rem;
-}
-.percent_icon {
-  display: flex;
-  justify-content: center;
-}
-.percent_icon img {
-  border: 1px solid #ff8c00ff;
-  background-color: #ff8c00ff;
-  border-radius: 8px;
-  padding: 10px;
-  align-self: center;
-  width: 40px;
-  height: 40px;
 }
 .graphic_container {
   display: flex;
