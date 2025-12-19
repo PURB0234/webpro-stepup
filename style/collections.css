@@ -32,6 +32,9 @@
     width: 60px;
     height: 60px;
 }
+.text-info {
+    color: #565D6DFF;
+}
 .progress-content {
     display: flex;
     flex-direction: column;
@@ -71,7 +74,7 @@
     justify-content: space-between;
     /* border: 2px solid #ffb2cb; */
     padding: 0 15px 15px 15px;
-    filter: opacity(50%); /*semakin kecil maka akan semakin tidak transparan */
+    filter: opacity(50%); /*semakin kecil maka akan semakin burem tidak transparan */
 }
 .container-padlock {
     /* background-color: aqua; */

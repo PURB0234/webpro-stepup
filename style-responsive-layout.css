@@ -59,4 +59,36 @@
   .right_area {
     width: 100%;
   }
+
+   footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 24px;
+    height: auto;
+  }
+
+  .copyright-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .copyright-content span {
+    /* flex-wrap: wrap; */
+    gap: 10px;
+  }
+
+  .footer-content {
+    width: 100%;
+    /* background-color: blue; */
+  }
+
+  .footer-content h5 {
+    font-size: 1rem;
+  }
+
+  .footer-content div {
+    gap: 6px;
+  }
 }

@@ -1,0 +1,13 @@
+@media (max-width: 700px) {
+    .leaderboard-content h2 {
+        font-size: 1rem;
+    }
+
+    .leaderboard-content span {
+        font-size: 0.875rem;
+    }
+
+    .filter-group button {
+        padding: 8px;   
+    }
+}
