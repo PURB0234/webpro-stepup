@@ -8,10 +8,12 @@
     border: none;
     cursor: pointer;
   }
-
+  .nav{
+    position: absolute;
+  }
   .nav-links,
   .nav-actions {
-    position: absolute;
+    position: relative;
     top: 70px;
     right: 20px;
     background: #fff;
@@ -19,8 +21,8 @@
     border-radius: 12px;
     flex-direction: column;
     align-items: center;
-    display: none;
     padding: 15px 0;
+    display: none;
   }
 
   nav.active .nav-links,
@@ -50,4 +52,34 @@
   .content .btn {
     padding: 12px 40px;
   }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links,
+  .nav-actions {
+    display: none;
+  }
+
+  /* Saat checkbox dicentang */
+  #menu-toggle:checked ~ .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 16px 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 12px 0;
+  }
+
 }

@@ -1,0 +1,15 @@
+@media(max-width: 768px){
+    main{
+        padding: 12px;
+    }
+    .analytics-top-container{
+        grid-template-columns: 1fr;
+        margin-bottom: 50px;
+    }
+    .small-card-container-top{
+        flex-direction: column;   
+    }
+    .card-bottom-big {
+        grid-template-columns: 1fr;
+    }
+}

@@ -6,30 +6,46 @@
     --primary-font: montserrat;
 
 }
+*{
+    box-sizing: border-box;
+}
 
 main{
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    padding: 24px;
+    padding: clamp(12px, 4vw, 24px);
     box-sizing: border-box;
     font-family: inter, sans-serif;
 
 }
 .analytics-top-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: 1fr;
     gap: 24px;
     width: 100%;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
 }
-.top-card-1,
-.top-card-2 {
+.top-card-1{
     background: #fff;
     border-radius: 16px;
     padding: 24px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     box-sizing: border-box;
+}
+.top-card-2{
+    background: #fff;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+.top-card-2 img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    object-fit: contain;
 }
 
 .top-card-1 h2, 
@@ -40,10 +56,11 @@ main{
 }
 
 .small-card-container-top {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 24px;
     flex-wrap: wrap;
-    margin-top: 200px;
+    margin-top: 20px;
 }
 
 .top-card-span {
@@ -69,13 +86,21 @@ main{
     width: 24px;
     height: 24px;
 }
-.analytics-bottom-container {
+.card-bottom-small {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 24px;
     width: 100%;
     margin-top: 16px;
 }
+.card-bottom-big {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    width: 100%;
+    margin-top: 16px;
+}
+
 
 .card-bottom {
     display: flex;
@@ -103,13 +128,8 @@ main{
     padding-bottom: 15px;
 }
 .icon-bottom img{
-    width: 32px;
-    height: 32px;
-}
-.top-card-2 img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
+    width: 2rem;
+    height: 2rem;
 }
 .chart-text h2{
     font-family: var(--primary-font);

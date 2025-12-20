@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 .stepbox {
   border: 1px solid #ddd;
   width: 100%;
@@ -6,12 +9,16 @@
   font-family: Inter, sans-serif;
   padding: 10px;
 }
+.dashboard_container {
+  width: 100%;
+}
 .stepbox h1 {
   color: #3366cc;
   padding: 10px;
 }
 .progress_bar_image {
-  width: 14rem;
+  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 .stepbox image {
@@ -43,8 +50,8 @@
 }
 .claimrewards_card{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1rem;
+  grid-template-columns: 1fr;
+  gap: 10px;
 }
 
 .stepbox_claimrewards {
@@ -68,9 +75,9 @@
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 12px;
+  margin: 0;
   width: 100%;
-  padding: 10px;
-  margin: 10px;
+    padding: 10px;
 }
 .claimrewards_text_small {
   display: flex;
@@ -113,6 +120,7 @@
 }
 .graphic_image {
   max-width: 100%;
+  width: 100%;
   object-fit: contain;
   height: auto;
 }
@@ -154,4 +162,32 @@
   font-size: 14px;
   font-weight: 500;
   padding-top: 8px;
+}
+@media(max-width: 768px) {
+  .stepbox{
+    width: 100%;
+    height: auto;
+  }
+  .stepbox h1 {
+    color: hsl(220, 60%, 50%);
+    padding: 10px;
+  }
+  /* .stepbox img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  } */
+  .stepbox h3 {
+    padding: 5px;
+  }
+  .stepbox_claimrewards {
+    grid-template-columns: 1fr;
+  }
+
+  .progress_bar {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 12px;
+  }
 }
