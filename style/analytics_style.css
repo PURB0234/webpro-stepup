@@ -13,9 +13,8 @@
 
 main{
     width: 100%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: auto;
-    padding: clamp(12px, 4vw, 24px);
     box-sizing: border-box;
     font-family: inter, sans-serif;
 
@@ -44,8 +43,6 @@ main{
 }
 .top-card-2 img {
     width: 100%;
-    padding: 0;
-    margin: 0;
     object-fit: contain;
 }
 
