@@ -1,13 +1,15 @@
 
 *{
   font-family: inter, sans-serif;
+  box-sizing: border-box;
 }
 
 .card {
   background: #fff;
   padding: 25px;
   border-radius: 12px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    box-shadow: 0 0.25rem 0.625rem rgba(0,0,0,0.1);
+    width: 100%;
   margin-bottom: 30px;
 }
 
@@ -19,6 +21,10 @@
 .card p {
   color: #666;
   margin-bottom: 10px;
+}
+.card-text{
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .profile-info {
@@ -53,6 +59,19 @@
   border: 1px solid #ccc;
   border-radius: 6px;
   margin-top: 3px;
+}
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+textarea, 
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: block; /* Memastikan input mengambil baris sendiri */
 }
 
 .textarea {
@@ -215,3 +234,21 @@ input:checked + .slider:before {
   margin-top: 10px;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+    /* Memberikan ruang di pinggir layar agar tidak sesak */
+    .main-content {
+        padding: 15px; 
+    }
+
+    /* Mengubah form info menjadi 1 kolom saja */
+    .info-form {
+        grid-template-columns: 1fr; 
+        gap: 5px;
+    }
+
+    /* Mengatur ulang layout profil agar foto di atas, form di bawah */
+    .profile-info {
+        flex-direction: column;
+        align-items: center;
+    }
+  } 
