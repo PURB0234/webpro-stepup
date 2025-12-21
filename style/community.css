@@ -1,3 +1,11 @@
+:root {
+  --text-xs: 0.75rem; /*12px*/
+  --bg-primary: #636ae8ff;
+  --bg-secondary: rgb(64, 70, 174);
+  --text-white: #fff;
+  --bg-white: #fff;
+}
+
 .left-content-community {
   width: 580px;
   height: 100%;
@@ -11,7 +19,7 @@
 }
 
 .container-stepup button {
-  background-color: #636ae8ff;
+  background-color: var(--bg-primary);
   font-weight: 600;
   border: none;
   border-radius: 7px;
@@ -19,14 +27,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: var(--text-white);
   gap: 10px;
   margin-top: 15px;
 }
 
+.container-stepup button:hover {
+  background-color: var(--bg-secondary);
+  color: var(--text-white);
+}
+
 .post-card {
   width: 100%;
-  background: #fff;
+  background: var(--bg-white);
   border-radius: 15px;
   border: 1px solid #dee1e6ff;
   display: flex;
@@ -40,24 +53,19 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  /* background-color: aquamarine; */
 }
 
 .post-header span {
   color: #565d6dff;
-  font-size: 0.775rem;
+  font-size: var(--text-xs);
 }
 
 .post-content {
-  /* padding: 15px; */
   flex: 1;
-  /* background-color: blue; */
 }
 
 .post-footer {
-  /* background-color: brown; */
   padding: 10px 15px;
-  /* border-top: 1px solid #eee; */
 }
 
 .post-image {
@@ -100,20 +108,16 @@
 }
 
 .right-content {
-  /* background-color: #d21a1a; */
   flex: 1;
   height: auto;
   margin-left: 20px;
-  /* padding: 15px; */
-  /* border: 1px solid #dee1e6ff; */
   border-radius: 15px;
 }
 
 .leaderboard-content {
-  background-color: #fff;
+  background-color: var(--bg-white);
   flex: 1;
   height: auto;
-  /* margin-left: 20px; */
   padding: 15px;
   border: 1px solid #dee1e6ff;
   border-radius: 15px;
@@ -122,10 +126,15 @@
 .right-content button {
   padding: 10px;
   border: none;
-  background-color: #636ae8ff;
+  background-color: var(--bg-primary);
   border-radius: 7px;
   color: #fff;
   font-weight: 600;
+}
+
+.right-content button:hover {
+  background-color: var(--bg-secondary);
+  color: var(--text-white);
 }
 
 .filter-group {
@@ -149,14 +158,14 @@ table {
 }
 
 #view-all {
-  background-color: #fff;
+  background-color: var(--bg-white);
   border: 1px solid #DEE1E6FF;
   width: 100%;
   color: #171A1FFF;
 }
 
 .invite-card {
-    background-color: #fff;
+    background-color: var(--bg-white);
     padding: 20px;
     border: 1px solid #dee1e6ff;
     margin-top: 60px;

@@ -191,6 +191,12 @@ footer {
   /* margin-top: 50px; */
 }
 
+.copyright-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .copyright-content span {
   display: flex;
   align-items: center;
