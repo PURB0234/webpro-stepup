@@ -8,16 +8,19 @@
 }
 
 *{
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 main{
     width: 100%;
     /* max-width: 1200px; */
     margin: auto;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family: inter, sans-serif;
 
+}
+.main-content{
+    /* padding: 24px; */
 }
 .analytics-top-container {
     display: grid;
