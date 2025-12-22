@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights Library</title>
+    <link rel="stylesheet" href="library.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-shoe-prints"></i> StepUp
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Live Tracker</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Challenges</a></li>
+            <li><a href="#">Rewards</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#" class="active">Insights Library</a></li>
+        </ul>
+        <div class="user-profile">
+            <img src="https://ui-avatars.com/api/?name=User&background=random" alt="Profile">
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="page-header">
+            <h1>Insights Library</h1>
+            <p>Ringkasan bulanan, rekor pribadi, dan pencapaian penting Anda.</p>
+        </header>
+
+        <!-- Monthly Highlights Section -->
+        <section class="section">
+            <h3>Monthly Highlights</h3>
+            <div class="card highlight-card">
+                <div class="highlight-stats">
+                    <div class="stat-item">
+                        <div class="icon blue"><i class="fa-solid fa-shoe-prints"></i></div>
+                        <div>
+                            <h4>82,000 steps</h4>
+                            <p>Total steps this month</p>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="icon blue"><i class="fa-solid fa-route"></i></div>
+                        <div>
+                            <h4>8.5 km</h4>
+                            <p>Longest walk</p>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="icon blue"><i class="fa-solid fa-trophy"></i></div>
+                        <div>
+                            <h4>14,200 steps</h4>
+                            <p>Best Day</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="highlight-chart">
+                    <div class="chart-header">
+                        <span><i class="fa-regular fa-calendar"></i> November 2023</span>
+                    </div>
+                    <!-- SVG Wave Representation -->
+                    <svg viewBox="0 0 500 150" class="wave-chart">
+                        <path d="M0,100 C150,200 350,0 500,100" fill="none" stroke="#6366f1" stroke-width="3" stroke-dasharray="5,5"/>
+                        <path d="M0,100 C150,200 350,0 500,100 L500,150 L0,150 Z" fill="url(#gradient)" opacity="0.1"/>
+                        <defs>
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Personal Records Section -->
+        <section class="section">
+            <h3>Personal Records</h3>
+            <div class="records-grid">
+                <div class="card record-card">
+                    <div class="icon blue"><i class="fa-solid fa-shoe-prints"></i></div>
+                    <div>
+                        <h4>14,200 steps</h4>
+                        <p>Daily step count</p>
+                    </div>
+                </div>
+                <div class="card record-card">
+                    <div class="icon blue"><i class="fa-solid fa-route"></i></div>
+                    <div>
+                        <h4>8.5 km</h4>
+                        <p>Longest walk</p>
+                    </div>
+                </div>
+                <div class="card record-card">
+                    <div class="icon blue"><i class="fa-solid fa-gauge-high"></i></div>
+                    <div>
+                        <h4>6.1 km/h</h4>
+                        <p>Top speed</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Milestone Timeline Section -->
+        <section class="section">
+            <h3>Milestone Timeline</h3>
+            <div class="timeline">
+                <!-- Item Left -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="icon blue"><i class="fa-solid fa-flag"></i></div>
+                        <div>
+                            <h4>Reached 100,000 steps</h4>
+                            <p>January 15, 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Right -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="icon blue"><i class="fa-solid fa-star"></i></div>
+                        <div>
+                            <h4>7-day streak achieved</h4>
+                            <p>February 05, 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Left -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="icon blue"><i class="fa-solid fa-users"></i></div>
+                        <div>
+                            <h4>Joined the team</h4>
+                            <p>April 18, 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Right -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="icon blue"><i class="fa-solid fa-medal"></i></div>
+                        <div>
+                            <h4>Reached 1,000,000 steps</h4>
+                            <p>September 11, 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Left -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="icon blue"><i class="fa-solid fa-award"></i></div>
+                        <div>
+                            <h4>Completed 30-day challenge</h4>
+                            <p>November 01, 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Right -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="icon blue"><i class="fa-solid fa-chart-line"></i></div>
+                        <div>
+                            <h4>Achieved 500,000 steps in a month</h4>
+                            <p>December 12, 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2023 StepUp. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
