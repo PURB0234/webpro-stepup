@@ -26,8 +26,9 @@ body {
   flex-direction: column;
   justify-content: space-between;
   border-right: 1px solid #ddd;
-  height: 100vh;
-  /* overflow-y: auto; */
+  /* height: 100vh; */
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .logo-container {
