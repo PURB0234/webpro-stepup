@@ -15,12 +15,13 @@
         
           <ul class="nav-links">
             <li><a href="#">Features</a></li>
-            <li><a href="../dashboard.html">How It Works</a></li>
+            <li><a href="../dashboard.php">How It Works</a></li>
             <li><a href="#">Contact Us</a></li>
           </ul>
   
           <div class="nav-actions">
-            <a href="dashboard.html" class="login-btn">Login</a>
+            <a href="./auth/login_form.php" class="login-btn">Login</a>
+            <a href="./auth/register_form.php" class="login-btn">Register</a>
             <a href="#" class="btn">Download Now!</a>
           </div>
       </nav>
