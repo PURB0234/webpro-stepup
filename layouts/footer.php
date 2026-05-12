@@ -29,8 +29,10 @@
 </main>
 </div>
 </div>
-
 <script src="../assets/js/sidebar.js"></script>
+<script src="../assets/js/fetch_community.js"></script>
+<script src="../assets/js/onActionPostingan.js"></script>
+<script src="../assets/js/popupComunity.js"></script>
 
 </body>
 

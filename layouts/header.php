@@ -12,6 +12,7 @@ if (session_status() === PHP_SESSION_NONE) {
     <title>StepUp</title>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <link rel="stylesheet" href="../style/dashboard_style.css">
     <link rel="stylesheet" href="../style/reward.css">
     <link rel="stylesheet" href="../style/responsive_rewards_page.css">
@@ -26,7 +27,6 @@ if (session_status() === PHP_SESSION_NONE) {
     <link rel="stylesheet" href="../style_side_nav_main_footer.css">
     <link rel="stylesheet" href="../style-responsive-layout.css">
     <link rel="stylesheet" href="responsive_dashboard_style.css">
-    <script src="../assets/js/popupComunity.js"></script>
 
 </head>
 

@@ -2,6 +2,7 @@
 session_start();
 
 require_once "../services/koneksi.php";
+/** @var mysqli $conn */
 
 // Cek role admin
 if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
