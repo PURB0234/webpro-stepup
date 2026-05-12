@@ -51,7 +51,7 @@
                     </a>
                 </li>
 
-                <?php if ($_SESSION['role'] === 'admin'): ?>
+                <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin'):  ?>
                     <li>
                         <a href="../admin/tambah_reward.php" class="sidebar-link">
                             <img class="icon" src="../assets/icon/gift.png">

@@ -3,13 +3,15 @@
 
 <head>
     <title>Login</title>
+    <link rel="stylesheet" href="../style/login_style.css">
 </head>
 
 <body>
 
-    <h2>Login User</h2>
-
+    <!-- <h2>Login User</h2> -->
+    
     <form action="login.php" method="POST">
+        <h2>Login User</h2>
 
         <label>Nama</label><br>
         <input type="text" name="nama" required><br><br>

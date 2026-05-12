@@ -1,6 +1,7 @@
 <?php
 session_start();
-include "../services/koneksi.php";
+require_once "../services/koneksi.php";
+/** @var mysqli $conn */
 
 $email = $_POST['email'];
 

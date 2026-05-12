@@ -30,13 +30,14 @@
           <article class="card">
 
             <div class="card_image">
-              <img src="../assets/default_reward.png" alt="reward image" />
+              <!-- <img src="../assets/default_reward.png" alt="reward image" /> -->
+              <img src="../uploads/<?= $reward['gambar']; ?>">
             </div>
 
             <div class="card-content">
               <h4><?= $reward['name_reward'] ?? 'Tidak ada' ?></h4>
               <p>
-                Tukarkan poin kamu dengan reward menarik ini.
+                <?= $reward['description'] ?? 'Tidak ada deskripsi' ?>
               </p>
             </div>
 
@@ -46,6 +47,12 @@
             </div>
 
             <button type="button" class="btn-redeem">Redeem</button>
+            <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin'):  ?>
+              <form action="../rewards/delete.php" method="POST" onsubmit="return confirm('Yakin ingin menghapus reward ini?');">
+                <input type="hidden" name="id_reward" value="<?= $reward['id_reward']; ?>">
+                <button type="submit" class="btn-delete">Delete</button>
+              </form>
+            <?php endif; ?>
 
           </article>
 

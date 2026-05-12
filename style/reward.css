@@ -1,5 +1,6 @@
 :root {
   --bg-primary: #3366CCFF;
+  --bg-delete: #FF0000;
 }
 
 .balance-card {
@@ -109,9 +110,26 @@
   margin: 15px;
 }
 
+.btn-delete {
+  font-family: sans-serif;
+  background-color: var(--bg-delete);
+  color: #FFFFFFFF;
+  border: 1px solid var(--bg-delete);
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 8px;
+  margin: 15px;
+}
+
 .btn-redeem:hover {
   background: #FFFFFFFF;
   color: var(--bg-primary);
+}
+
+.btn-delete:hover {
+  background: #fff;
+  color: var(--bg-delete);
 }
 
 .card-points {

@@ -3,13 +3,14 @@
 
 <head>
     <title>Register</title>
+     <link rel="stylesheet" href="../style/login_style.css">
 </head>
 
 <body>
 
-    <h2>Register User</h2>
-
+    
     <form action="register.php" method="POST">
+        <h2>Register User</h2>
 
         <label>Nama</label><br>
         <input type="text" name="nama" required><br><br>

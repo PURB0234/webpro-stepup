@@ -1,5 +1,6 @@
 <?php
-require "../services/koneksi.php";
+require_once "../services/koneksi.php";
+/** @var mysqli $conn */
 
 $query = "SELECT * FROM rewards";
 $result = mysqli_query($conn, $query);
