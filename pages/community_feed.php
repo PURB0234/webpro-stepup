@@ -9,10 +9,27 @@
       <div class="container-stepup">
         <h1>StepUp Community</h1>
         <span>Bagikan perjalanan kebugaran Anda, rayakan pencapaian</span>
-        <button>
+        <button onclick="bukaPopup()">
           <img class="icon" src="../assets/icon/plus.png" alt="" />
           Buat Postingan Baru
         </button>
+      </div>
+
+      <!-- add popup -->
+      <div id="popup" class="popup">
+
+        <input type="text" placeholder="deskripsi" name="deskripsi"><br>
+        <input type="file" name="gambar"><br>
+        <input type="text" placeholder="langkah anda berape" name="langkah"><br>
+        <input type="text" placeholder="jarak anda berape" name="jarak"><br>
+        <input type="text" placeholder="kalori yang terbakar" name="kalori"><br>
+
+        <button onclick="tutupPopup()">
+          Tutup
+        </button>
+
+        <button>Buat Postingan</button>
+
       </div>
 
       <div class="post-card">

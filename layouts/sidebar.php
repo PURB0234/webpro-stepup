@@ -62,8 +62,8 @@
                 <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin'):  ?>
                     <li>
                         <a href="../admin/users_data.php" class="sidebar-link">
-                            <img class="icon" src="../assets/icon/gift.png">
-                            Users
+                            <img class="icon" src="../assets/icon/management.png">
+                            Users Management
                         </a>
                     </li>
                 <?php endif; ?>

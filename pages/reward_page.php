@@ -53,6 +53,13 @@
                 <button type="submit" class="btn-delete">Delete</button>
               </form>
             <?php endif; ?>
+            
+            <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin'):  ?>
+              <form action="../rewards/delete.php" method="POST" onsubmit="return confirm('Yakin ingin menghapus reward ini?');">
+                <input type="hidden" name="id_reward" value="<?= $reward['id_reward']; ?>">
+                <button type="submit" class="btn-delete">Edit</button>
+              </form>
+            <?php endif; ?>
 
           </article>
 

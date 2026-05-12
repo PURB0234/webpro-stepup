@@ -28,7 +28,6 @@ if ($_SESSION['role'] !== 'admin') {
         <input type="number" name="poin" required><br><br>
         
         <label>Description:</label><br>
-        <!-- <input type="text" name="description" required><br><br> -->
         <textarea name="description" id="" required></textarea><br><br>
 
         <label>Image:</label><br>

@@ -25,6 +25,7 @@ if (session_status() === PHP_SESSION_NONE) {
     <link rel="stylesheet" href="../style_side_nav_main_footer.css">
     <link rel="stylesheet" href="../style-responsive-layout.css">
     <link rel="stylesheet" href="responsive_dashboard_style.css">
+    <script src="../assets/js/popupComunity.js"></script>
 
 </head>
 
