@@ -31,7 +31,7 @@ if ($_SESSION['role'] !== 'admin') {
         <!-- <input type="text" name="description" required><br><br> -->
         <textarea name="description" id="" required></textarea><br><br>
 
-        <label>Poin:</label><br>
+        <label>Image:</label><br>
         <input type="file" name="gambar"><br><br>
 
         <button type="submit">Tambah</button>
