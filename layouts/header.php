@@ -22,6 +22,7 @@ if (session_status() === PHP_SESSION_NONE) {
     <link rel="stylesheet" href="../style/community.css">
     <link rel="stylesheet" href="../style/responsive_community_page.css">
     <link rel="stylesheet" href="../style/users_data_style.css">
+    <link rel="stylesheet" href="../style/tambah_reward_style.css">
 
     <link rel="stylesheet" href="../style_side_nav_main_footer.css">
     <link rel="stylesheet" href="../style-responsive-layout.css">

@@ -48,5 +48,5 @@ table th, table td{
     border: none;
     padding: 5px 10px;
     cursor: pointer;
-    border-radius: 15%;
+    border-radius: 6px;
 }
