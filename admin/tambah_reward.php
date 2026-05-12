@@ -1,3 +1,6 @@
+<?php include "../layouts/header.php"; ?>
+<?php include "../layouts/sidebar.php"; ?>
+<?php include "../layouts/navbar.php"; ?>
 <?php
 session_start();
 
@@ -12,28 +15,28 @@ if ($_SESSION['role'] !== 'admin') {
 <html>
 
 <head>
-    <title>Tambah Reward</title>
+    <title>Add Reward</title>
 </head>
 
 <body>
 
-    <h2>Tambah Reward</h2>
+    <h2>Add Reward</h2>
 
     <form action="../rewards/create.php" method="POST" enctype="multipart/form-data">
 
-        <label>Nama Reward:</label><br>
-        <input type="text" name="name_reward" required><br><br>
+        <label>Reward Name:</label><br>
+        <input type="text" name="name_reward" placeholder="Reward Name"required><br><br>
 
-        <label>Poin:</label><br>
-        <input type="number" name="poin" required><br><br>
-        
+        <label>Point Required:</label><br>
+        <input type="number" name="poin" placeholder="Point Required" required><br><br>
+
         <label>Description:</label><br>
-        <textarea name="description" id="" required></textarea><br><br>
+        <input name="description" placeholder="" id="description" required></input><br><br>
 
         <label>Image:</label><br>
         <input type="file" name="gambar"><br><br>
 
-        <button type="submit">Tambah</button>
+        <button type="submit">Add Reward</button>
 
     </form>
 

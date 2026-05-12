@@ -37,7 +37,7 @@
                             <td><?= $user['status']; ?></td>
 
                             <td class="user-button">
-                                <a href="../users/edit.php?id=<?= $user['id']; ?>">
+                                <a href="../admin/edit_user.php?id=<?= $user['id']; ?>">
                                     <button>Edit</button>
                                 </a>
 
