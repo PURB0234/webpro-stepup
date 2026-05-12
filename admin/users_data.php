@@ -2,7 +2,7 @@
 <?php include "../layouts/sidebar.php"; ?>
 <?php include "../layouts/navbar.php"; ?>
 <?php require "../users/read.php"; ?>
-<?php require "../users/delete.php"; ?>
+<!-- <?php require "../users/delete.php"; ?> -->
 <?php require "../users/edit.php"; ?>
 
 <div class="main-content">
@@ -33,11 +33,11 @@
                             <td><?= $user['status']; ?></td>
 
                             <td>
-                                <a href="edit.php?id=<?= $user['id']; ?>">
+                                <a href="../users/edit.php?id=<?= $user['id']; ?>">
                                     <button>Edit</button>
                                 </a>
 
-                                <a href="delete.php?id=<?= $user['id']; ?>" 
+                                <a href="../users/delete.php?id=<?= $user['id']; ?>" 
                                    onclick="return confirm('Yakin ingin menghapus user ini?')">
                                     <button>Delete</button>
                                 </a>
