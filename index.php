@@ -33,7 +33,7 @@
           exclusive campus deals. Join fun challenges, compete with friends, and
           stay active while unlocking exciting benefits.
         </p>
-        <a href="dashboard.html" class="btn anim">Join Now!</a>
+        <a href="pages/dashboard.php" class="btn anim">Join Now!</a>
       </div>
     </div>
   </body>
