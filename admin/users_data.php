@@ -2,6 +2,8 @@
 <?php include "../layouts/sidebar.php"; ?>
 <?php include "../layouts/navbar.php"; ?>
 <?php require "../users/read.php"; ?>
+<?php require "../users/delete.php"; ?>
+<?php require "../users/edit.php"; ?>
 
 <div class="main-content">
     <div class="container_data_users">
@@ -14,8 +16,8 @@
                     <th>ID</th>
                     <th>Nama</th>
                     <th>Email</th>
-                    <th>NIM</th>
                     <th>Role</th>
+                    <th>Status</th>
                     <th>Aksi</th>
                 </tr>
             </thead>
@@ -27,8 +29,8 @@
                             <td><?= $user['id']; ?></td>
                             <td><?= $user['nama']; ?></td>
                             <td><?= $user['email']; ?></td>
-                            <td><?= $user['nim']; ?></td>
                             <td><?= $user['role']; ?></td>
+                            <td><?= $user['status']; ?></td>
 
                             <td>
                                 <a href="edit.php?id=<?= $user['id']; ?>">
