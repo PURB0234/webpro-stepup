@@ -1,4 +1,4 @@
-CREATE DATABASE IF NOT EXISTS db_stepup;
+CREATE DATABASE db_stepup;
 USE db_stepup;
 
 CREATE TABLE IF NOT EXISTS users (
@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS users (
     nama VARCHAR(255) NOT NULL UNIQUE,
     email VARCHAR(255) NOT NULL UNIQUE,
     nim VARCHAR(255) NOT NULL,
-    role ENUM('admin', 'user') NOT NULL DEFAULT 'user',
+    role ENUM('admin', 'user') NOT NULL DEFAULT 'user'
 );
 
 CREATE TABLE IF NOT EXISTS rewards (
