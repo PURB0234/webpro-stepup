@@ -1,40 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Montserrat:ital,wght@0,500;1,500&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
-
-h2{
-    text-align: center;
-    font-family: Montserrat;
+.reward-page{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background: #f5f7fb;
 }
-form{
-    background-color: #f0f0f0;
-    border: 5px solid #f0f0f0;
-    border-radius: 3%;
-    padding: 20px;
-    width: 50%;
-    margin: auto;
+
+.reward-container{
+    width: 100%;
+    max-width: 600px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.reward-title{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+.reward-form{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.reward-group{
     display: flex;
     flex-direction: column;
 }
-label{
-    font-family: Montserrat;
-    display: block;
+
+.reward-label{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #444;
 }
-input{
+
+.reward-input{
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 12px 14px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+    box-sizing: border-box;
 }
-#description{
-    height: 100px;
+
+.reward-input:focus{
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79,70,229,0.15);
 }
-button{
-    margin-left: auto;
-    background-color: #3366cc;
-    font-family: Montserrat;
-    color: white;
+
+.reward-textarea{
+    width: 100%;
+    min-height: 120px;
+    padding: 12px 14px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    font-size: 14px;
+    resize: vertical;
+    outline: none;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.reward-textarea:focus{
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79,70,229,0.15);
+}
+
+.reward-file{
+    font-size: 14px;
+}
+
+.reward-button{
+    padding: 14px;
     border: none;
-    padding: 15px 25px;
+    border-radius: 12px;
+    background: #4f46e5;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
     cursor: pointer;
-    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.reward-button:hover{
+    background: #4338ca;
 }

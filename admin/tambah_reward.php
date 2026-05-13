@@ -22,23 +22,94 @@ if ($_SESSION['role'] !== 'admin') {
 
     <h2>Add Reward</h2>
 
-    <form action="../rewards/create.php" method="POST" enctype="multipart/form-data">
+   <div class="reward-page">
 
-        <label>Reward Name:</label><br>
-        <input type="text" name="name_reward" placeholder="Reward Name"required><br><br>
+    <div class="reward-container">
 
-        <label>Point Required:</label><br>
-        <input type="number" name="poin" placeholder="Point Required" required><br><br>
+        <h2 class="reward-title">
+            Add Reward
+        </h2>
 
-        <label>Description:</label><br>
-        <input name="description" placeholder="" id="description" required></input><br><br>
+        <form
+            class="reward-form"
+            action="../rewards/create.php"
+            method="POST"
+            enctype="multipart/form-data">
 
-        <label>Image:</label><br>
-        <input type="file" name="gambar"><br><br>
+            <div class="reward-group">
 
-        <button type="submit">Add Reward</button>
+                <label class="reward-label">
+                    Reward Name
+                </label>
 
-    </form>
+                <input
+                    class="reward-input"
+                    type="text"
+                    name="name_reward"
+                    placeholder="Reward Name"
+                    required>
+
+            </div>
+
+
+            <div class="reward-group">
+
+                <label class="reward-label">
+                    Point Required
+                </label>
+
+                <input
+                    class="reward-input"
+                    type="number"
+                    name="poin"
+                    placeholder="Point Required"
+                    required>
+
+            </div>
+
+
+            <div class="reward-group">
+
+                <label class="reward-label">
+                    Description
+                </label>
+
+                <textarea
+                    class="reward-textarea"
+                    name="description"
+                    placeholder="Description"
+                    required></textarea>
+
+            </div>
+
+
+            <div class="reward-group">
+
+                <label class="reward-label">
+                    Image
+                </label>
+
+                <input
+                    class="reward-file"
+                    type="file"
+                    name="gambar">
+
+            </div>
+
+
+            <button
+                class="reward-button"
+                type="submit">
+
+                Add Reward
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
 
 </body>
 

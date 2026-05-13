@@ -5,6 +5,7 @@ header("Content-Type: application/json");
 require_once "../services/koneksi.php";
 /** @var mysqli $conn */
 
+//isset mengecek nilai dari variabel itu ada tidak null
 $deskripsi = isset($_POST['deskripsi']) ? mysqli_real_escape_string($conn, $_POST['deskripsi']) : '';
 $langkah   = isset($_POST['langkah']) ? mysqli_real_escape_string($conn, $_POST['langkah']) : '';
 $jarak    = isset($_POST['jarak']) ? mysqli_real_escape_string($conn, $_POST['jarak']) : '';
