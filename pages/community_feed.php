@@ -40,48 +40,104 @@
           id="formPostingan"
           enctype="multipart/form-data">
 
-          <input
-            type="text"
-            name="deskripsi"
-            placeholder="Deskripsi">
+          <!-- DESKRIPSI -->
+          <div class="popup-group">
 
-          <br>
+            <label class="popup-label">
+              Deskripsi
+            </label>
 
-          <input
-            type="file"
-            name="gambar">
+            <input
+              class="popup-input"
+              type="text"
+              name="deskripsi"
+              placeholder="Masukkan deskripsi">
 
-          <br>
+          </div>
 
-          <input
-            type="text"
-            name="langkah"
-            placeholder="Langkah">
 
-          <br>
+          <!-- GAMBAR -->
+          <div class="popup-group">
 
-          <input
-            type="text"
-            name="jarak"
-            placeholder="Jarak">
+            <label class="popup-label">
+              Upload Gambar
+            </label>
 
-          <br>
+            <input
+              class="popup-file"
+              type="file"
+              name="gambar">
 
-          <input
-            type="text"
-            name="kalori"
-            placeholder="Kalori">
+          </div>
 
-          <br>
 
-          <button type="submit">
+          <!-- LANGKAH -->
+          <div class="popup-group">
+
+            <label class="popup-label">
+              Langkah
+            </label>
+
+            <input
+              class="popup-input"
+              type="text"
+              name="langkah"
+              placeholder="Masukkan jumlah langkah">
+
+          </div>
+
+
+          <!-- JARAK -->
+          <div class="popup-group">
+
+            <label class="popup-label">
+              Jarak
+            </label>
+
+            <input
+              class="popup-input"
+              type="text"
+              name="jarak"
+              placeholder="Masukkan jarak">
+
+          </div>
+
+
+          <!-- KALORI -->
+          <div class="popup-group">
+
+            <label class="popup-label">
+              Kalori
+            </label>
+
+            <input
+              class="popup-input"
+              type="text"
+              name="kalori"
+              placeholder="Masukkan kalori">
+
+          </div>
+
+
+          <!-- BUTTON SUBMIT -->
+          <button
+            class="popup-submit"
+            type="submit">
+
             Buat Postingan
+
           </button>
 
         </form>
 
-        <button onclick="tutupPopup()">
+
+        <!-- BUTTON TUTUP -->
+        <button
+          class="popup-close"
+          onclick="tutupPopup()">
+
           Tutup
+
         </button>
 
       </div>
