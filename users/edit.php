@@ -14,9 +14,11 @@ if (isset($_GET['id'])) {
 }
 if (isset($_POST['update'])) {
     $id = $_POST['id'];
+    $role = $_POST['role'];
     $status = $_POST['status'];
 
     $query_update = "UPDATE users SET status = '$status' WHERE id = $id";
+    $query_update = "UPDATE users SET role = '$role' WHERE id = $id";
 
     if (mysqli_query($conn, $query_update)) {
         echo "<script>
