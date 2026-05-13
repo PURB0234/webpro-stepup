@@ -42,7 +42,7 @@
             </div>
 
             <div class="card-points">
-              <p>Poin</p>
+              <h5>Poin</h5>
               <h3><?= $reward['poin'] ?? 0 ?></h3>
             </div>
 
@@ -54,12 +54,12 @@
               </form>
             <?php endif; ?>
             
-            <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin'):  ?>
+            <!-- <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin'):  ?>
               <form action="../rewards/delete.php" method="POST" onsubmit="return confirm('Yakin ingin menghapus reward ini?');">
                 <input type="hidden" name="id_reward" value="<?= $reward['id_reward']; ?>">
                 <button type="submit" class="btn-delete">Edit</button>
               </form>
-            <?php endif; ?>
+            <?php endif; ?> -->
 
           </article>
 

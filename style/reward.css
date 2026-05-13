@@ -110,6 +110,11 @@
   margin: 15px;
 }
 
+.btn-redeem:hover {
+  background: #FFFFFFFF;
+  color: var(--bg-primary);
+}
+
 .btn-delete {
   font-family: sans-serif;
   background-color: var(--bg-delete);
@@ -120,11 +125,6 @@
   font-weight: 600;
   padding: 8px;
   margin: 15px;
-}
-
-.btn-redeem:hover {
-  background: #FFFFFFFF;
-  color: var(--bg-primary);
 }
 
 .btn-delete:hover {

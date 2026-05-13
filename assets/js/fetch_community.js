@@ -2,9 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   loadPost();
 });
 
-// ====================
 // GET POST
-// ====================
 
 function loadPost() {
   fetch("../api/get_post.php")

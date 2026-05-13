@@ -2,7 +2,7 @@
 <?php include "../layouts/sidebar.php"; ?>
 <?php include "../layouts/navbar.php"; ?>
 <?php
-session_start();
+// session_start();
 
 // Proteksi admin
 if ($_SESSION['role'] !== 'admin') {
