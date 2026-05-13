@@ -41,6 +41,12 @@ if (isset($_GET['id'])) {
             <option value="banned" <?= ($user['status'] == 'banned') ? 'selected' : ''; ?>>Banned</option>
         </select><br><br>
 
+         <label>Role:</label><br>
+        <select name="role" id="role">
+            <option value="user" <?= ($user['role'] == 'user') ? 'selected' : ''; ?>>User</option>
+            <option value="admin" <?= ($user['role'] == 'admin') ? 'selected' : ''; ?>>Admin</option>
+        </select><br><br>
+
         <button type="submit" name="update">Update User</button>
 
     </form>

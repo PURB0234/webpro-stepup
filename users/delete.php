@@ -8,6 +8,7 @@ require_once "../services/koneksi.php";
 if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
     header("Location: ../pages/dashboard.php");
     exit();
+    
 }
 
 // Ambil id dari URL
