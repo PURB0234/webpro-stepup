@@ -4,13 +4,15 @@ require_once "../services/koneksi.php";
 /** @var mysqli $conn */
 
 $email = $_POST['email'];
+$password = $_POST['password'];
 
 $result = mysqli_query($conn, "SELECT * FROM users WHERE email='$email'");
 $data = mysqli_fetch_assoc($result);
 
-if ($data) {
+if ($data && password_verify($password, $data['password'])) {
     $_SESSION['nama'] = $data['nama'];
     $_SESSION['email'] = $data['email'];
+    $_SESSION['password'] = $data['password'];
     $_SESSION['role'] = $data['role']; // <-- INI DI SINI
 
     header("Location: ../pages/dashboard.php");
