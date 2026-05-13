@@ -5,9 +5,9 @@
 <!-- <?php require "../users/delete.php"; ?> -->
 <?php require "../users/edit.php"; ?>
 
-<link rel="stylesheet" href="style/users_data_style.css" />
+<!-- <link rel="stylesheet" href="style/users_data_style.css" />
     <link rel="stylesheet" href="style_side_nav_main_footer.css" />
-    <link rel="stylesheet" href="style-responsive-layout.css" />
+    <link rel="stylesheet" href="style-responsive-layout.css" /> -->
 
     <div class="main-content">
     <div class="container_data_users">

@@ -1,3 +1,7 @@
+<?php include "../layouts/header.php"; ?>
+<?php include "../layouts/sidebar.php"; ?>
+<?php include "../layouts/navbar.php"; ?>
+
 <?php
 require_once "../services/koneksi.php";
 /** @var mysqli $conn */
