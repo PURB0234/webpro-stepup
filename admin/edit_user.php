@@ -24,7 +24,7 @@ if (isset($_GET['id'])) {
 <body>
     <h2>Edit User</h2>
 
-    <form action="../users/edit.php" method="POST">
+    <form action="../api/users/update.php" method="POST">
 
         <input type="hidden" name="id" value="<?= $user['id']; ?>">
 

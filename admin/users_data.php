@@ -1,9 +1,9 @@
 <?php include "../layouts/header.php"; ?>
 <?php include "../layouts/sidebar.php"; ?>
 <?php include "../layouts/navbar.php"; ?>
-<?php require "../users/read.php"; ?>
-<!-- <?php require "../users/delete.php"; ?> -->
-<?php require "../users/edit.php"; ?>
+<?php require "../api/users/get.php"; ?>
+<?php require "../api/users/delete.php"; ?>
+<?php require "../api/users/update.php"; ?>
 
 <!-- <link rel="stylesheet" href="style/users_data_style.css" />
     <link rel="stylesheet" href="style_side_nav_main_footer.css" />
@@ -41,7 +41,7 @@
                                     <button>Edit</button>
                                 </a>
 
-                                <a href="../users/delete.php?id=<?= $user['id']; ?>" 
+                                <a href="../api/users/delete.php?action=delete&id=<?= $user['id']; ?>" 
                                    onclick="return confirm('Yakin ingin menghapus user ini?')">
                                     <button>Delete</button>
                                 </a>

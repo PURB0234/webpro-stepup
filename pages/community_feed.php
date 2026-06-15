@@ -3,6 +3,11 @@
 <?php include "../layouts/sidebar.php"; ?>
 <?php include "../layouts/navbar.php"; ?>
 
+<script>
+  const currentUserId = <?= isset($_SESSION['user_id']) ? intval($_SESSION['user_id']) : 0 ?>;
+  const currentUserName = "<?= isset($_SESSION['nama']) ? htmlspecialchars($_SESSION['nama'], ENT_QUOTES) : 'User' ?>";
+</script>
+
 <div class="main-content">
 
   <div class="main-content community-container">
@@ -145,6 +150,66 @@
 
       <!-- CONTAINER POST DINAMIS -->
       <div id="postContainer"></div>
+
+    </div>
+
+
+    <!-- COMMENT POPUP OVERLAY -->
+    <div id="commentOverlay" class="comment-overlay"></div>
+
+    <!-- COMMENT POPUP -->
+    <div id="commentPopup" class="comment-popup">
+
+      <!-- POPUP HEADER -->
+      <div class="comment-popup-header">
+
+        <h3>Komentar</h3>
+
+        <button
+          class="comment-popup-close"
+          onclick="tutupKomentar()">
+
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+
+        </button>
+
+      </div>
+
+      <!-- COMMENT LIST -->
+      <div id="commentList" class="comment-list">
+        <div class="comment-empty">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#bcc1ca" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+          </svg>
+          <p>Belum ada komentar</p>
+          <span>Jadilah yang pertama berkomentar!</span>
+        </div>
+      </div>
+
+      <!-- COMMENT INPUT -->
+      <form id="formKomentar" class="comment-form">
+        <input type="hidden" id="commentPostId" name="community_id">
+
+        <div class="comment-input-wrapper">
+          <img class="avatar" src="../assets/avatar/1.jpg" alt="avatar">
+          <input
+            type="text"
+            id="commentInput"
+            name="komentar"
+            placeholder="Tulis komentar..."
+            autocomplete="off"
+            required>
+          <button type="submit" class="comment-send-btn" title="Kirim">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </div>
+      </form>
 
     </div>
 

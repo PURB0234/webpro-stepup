@@ -16,11 +16,13 @@ $query = "INSERT INTO users (nama, email, password, nim, role) VALUES ('$nama','
 
 if(mysqli_query($conn, $query)){
 
+    $_SESSION['user_id'] = mysqli_insert_id($conn);
     $_SESSION['nama'] = $nama;
     $_SESSION['email'] = $email;
     $_SESSION['nim'] = $nim;
     $_SESSION['password'] = $hashedPassword;
     $_SESSION['role'] = 'user';
+    $_SESSION['foto_profile'] = null;
 
     header("Location: ../pages/dashboard.php");
     exit();

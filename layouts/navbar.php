@@ -11,7 +11,9 @@
 
             <img class="icon" src="../assets/icon/bell.png">
 
-            <img class="avatar" src="../assets/avatar/1.jpg">
+            <a href="../pages/profile.php" class="avatar-link" title="Lihat Profil">
+                <img class="avatar" src="<?= !empty($_SESSION['foto_profile']) ? '../uploads/profiles/' . $_SESSION['foto_profile'] : '../assets/avatar/1.jpg' ?>" alt="Avatar">
+            </a>
 
         </div>
 

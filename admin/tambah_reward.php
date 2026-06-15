@@ -32,7 +32,7 @@ if ($_SESSION['role'] !== 'admin') {
 
         <form
             class="reward-form"
-            action="../rewards/create.php"
+            id="formTambahReward"
             method="POST"
             enctype="multipart/form-data">
 
@@ -110,6 +110,29 @@ if ($_SESSION['role'] !== 'admin') {
     </div>
 
 </div>
+
+<script>
+document.getElementById("formTambahReward").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(this);
+
+    fetch("../api/rewards/post.php", {
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        alert(data.message);
+        if (data.success) {
+            window.location.href = "../pages/reward_page.php?success=1";
+        }
+    })
+    .catch(error => {
+        alert("Terjadi kesalahan: " + error.message);
+    });
+});
+</script>
 
 </body>
 

@@ -145,3 +145,243 @@
   font-size: small;
   margin-bottom: 5px;
 }
+
+/* New CSS for stock badges and disabled button */
+.card-stock {
+  padding: 5px 15px;
+}
+
+.stock-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.stock-badge.in-stock {
+  background-color: #e6f4ea;
+  color: #137333;
+}
+
+.stock-badge.out-of-stock {
+  background-color: #fce8e6;
+  color: #c5221f;
+}
+
+.btn-redeem.btn-disabled {
+  background-color: #e0e0e0 !important;
+  color: #757575 !important;
+  border-color: #e0e0e0 !important;
+  cursor: not-allowed;
+}
+
+/* Modal Styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  width: 90%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: modalSlideIn 0.3s ease-out;
+}
+
+.modal-sm {
+  max-width: 400px;
+}
+
+@keyframes modalSlideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #1e293b;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #64748b;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  color: #0f172a;
+}
+
+.modal-body {
+  padding: 20px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 16px 20px;
+  background-color: #f8fafc;
+  border-top: 1px solid #f1f5f9;
+}
+
+.btn-cancel {
+  padding: 8px 16px;
+  border: 1px solid #cbd5e1;
+  background-color: #ffffff;
+  color: #475569;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-cancel:hover {
+  background-color: #f1f5f9;
+  color: #0f172a;
+}
+
+.btn-confirm {
+  padding: 8px 16px;
+  border: 1px solid var(--bg-primary);
+  background-color: var(--bg-primary);
+  color: #ffffff;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-confirm:hover {
+  background-color: #ffffff;
+  color: var(--bg-primary);
+}
+
+.btn-confirm:disabled {
+  background-color: #cbd5e1;
+  border-color: #cbd5e1;
+  color: #94a3b8;
+  cursor: not-allowed;
+}
+
+/* History List Styling */
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.history-icon {
+  font-size: 20px;
+  background-color: #e0f2fe;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.history-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.history-info strong {
+  font-size: 14px;
+  color: #1e293b;
+}
+
+.history-info small {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+.history-poin {
+  font-weight: 700;
+  font-size: 14px;
+  color: #e11d48;
+}
+
+/* Toast Notifications */
+.notif-toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  color: #ffffff;
+  min-width: 250px;
+  animation: toastSlideIn 0.3s ease-out;
+  transition: all 0.3s;
+}
+
+@keyframes toastSlideIn {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.notif-success {
+  background-color: #10b981;
+}
+
+.notif-error {
+  background-color: #ef4444;
+}

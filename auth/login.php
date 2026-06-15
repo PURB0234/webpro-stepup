@@ -10,10 +10,12 @@ $result = mysqli_query($conn, "SELECT * FROM users WHERE email='$email'");
 $data = mysqli_fetch_assoc($result);
 
 if ($data && password_verify($password, $data['password'])) {
+    $_SESSION['user_id'] = $data['id'];
     $_SESSION['nama'] = $data['nama'];
     $_SESSION['email'] = $data['email'];
     $_SESSION['password'] = $data['password'];
     $_SESSION['role'] = $data['role']; // <-- INI DI SINI
+    $_SESSION['foto_profile'] = $data['foto_profile'];
 
     header("Location: ../pages/dashboard.php");
     exit();
