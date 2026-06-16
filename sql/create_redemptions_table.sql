@@ -1,7 +1,7 @@
 -- Tabel redemptions untuk menyimpan history redeem reward
 -- Jalankan SQL ini di phpMyAdmin atau MySQL client
 
-CREATE TABLE IF NOT EXISTS redemptions (
+CREATE TABLE redemptions (
     id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT NOT NULL,
     reward_id INT NOT NULL,
