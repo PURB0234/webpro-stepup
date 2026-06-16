@@ -51,11 +51,19 @@
                     </a>
                 </li>
 
-                <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin'):  ?>
+                <!-- <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin'):  ?>
                     <li>
                         <a href="../admin/tambah_reward.php" class="sidebar-link">
                             <img class="icon" src="../assets/icon/gift.png">
                             Tambah Reward
+                        </a>
+                    </li>
+                <?php endif; ?> -->
+                <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin'):  ?>
+                    <li>
+                        <a href="../admin/kelola_reward.php" class="sidebar-link">
+                            <img class="icon" src="../assets/icon/gear.png">
+                            Kelola Reward
                         </a>
                     </li>
                 <?php endif; ?>

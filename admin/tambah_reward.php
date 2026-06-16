@@ -82,6 +82,25 @@ if ($_SESSION['role'] !== 'admin') {
 
             </div>
 
+            <div class="reward-stock">
+
+                <div class="reward-stock-label">
+                    <label class="reward-label">
+                        Stock
+                    </label>
+                </div>
+
+                <div class="reward-stock-input">
+                    <input
+                        class="reward-input"
+                        type="number"
+                        name="stok"
+                        placeholder="Stock"
+                        required>
+                </div>
+
+            </div>
+
 
             <div class="reward-group">
 

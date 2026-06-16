@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+/* =============================
+   KELOLA REWARD PAGE
+   ============================= */
+
+.kelola-reward-container {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 28px 32px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.kelola-reward-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.kelola-reward-header h2 {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.4rem;
+    color: #1a1a2e;
+    margin: 0;
+}
+
+.btn-add-reward {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: linear-gradient(135deg, #3366cc, #5588ee);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 8px rgba(51, 102, 204, 0.3);
+}
+
+.btn-add-reward:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(51, 102, 204, 0.4);
+    background: linear-gradient(135deg, #2255bb, #4477dd);
+}
+
+.btn-add-reward .icon {
+    width: 14px;
+    height: 14px;
+    filter: brightness(0) invert(1);
+}
+
+/* =============================
+   TABLE
+   ============================= */
+
+.kelola-reward-table-wrapper {
+    overflow-x: auto;
+    border-radius: 10px;
+    border: 1px solid #e8ecf1;
+}
+
+.kelola-reward-table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 700px;
+}
+
+.kelola-reward-table thead tr {
+    background: linear-gradient(135deg, #3366cc, #4477dd);
+    color: white;
+}
+
+.kelola-reward-table th {
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 14px 16px;
+    text-align: left;
+    white-space: nowrap;
+    letter-spacing: 0.3px;
+}
+
+.kelola-reward-table th:first-child {
+    border-radius: 10px 0 0 0;
+}
+
+.kelola-reward-table th:last-child {
+    border-radius: 0 10px 0 0;
+}
+
+.kelola-reward-table td {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 13px;
+    padding: 12px 16px;
+    border-bottom: 1px solid #f0f2f5;
+    color: #333;
+    vertical-align: middle;
+}
+
+.kelola-reward-table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.kelola-reward-table tbody tr:hover {
+    background-color: #f4f7ff;
+}
+
+.kelola-reward-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Thumbnail */
+.reward-thumb {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #e8ecf1;
+    transition: transform 0.2s ease;
+}
+
+.reward-thumb:hover {
+    transform: scale(1.8);
+    z-index: 10;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.td-name {
+    font-weight: 600;
+    color: #1a1a2e;
+    max-width: 160px;
+}
+
+.td-desc {
+    max-width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #666;
+}
+
+.td-poin {
+    font-weight: 700;
+    color: #3366cc;
+}
+
+.td-stok {
+    font-weight: 600;
+}
+
+.td-aksi {
+    white-space: nowrap;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+/* =============================
+   ACTION BUTTONS
+   ============================= */
+
+.btn-edit-reward {
+    background: linear-gradient(135deg, #f0ad4e, #ec971f);
+    color: white;
+    border: none;
+    padding: 7px 14px;
+    border-radius: 6px;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.btn-edit-reward:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(240, 173, 78, 0.4);
+}
+
+.btn-delete-reward {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+    border: none;
+    padding: 7px 14px;
+    border-radius: 6px;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.btn-delete-reward:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(231, 76, 60, 0.4);
+}
+
+/* =============================
+   EDIT MODAL
+   ============================= */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-edit-reward {
+    background: #fff;
+    border-radius: 14px;
+    width: 520px;
+    max-width: 92vw;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    animation: modalSlideIn 0.3s ease;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.modal-edit-reward .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px 16px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.modal-edit-reward .modal-header h3 {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.1rem;
+    color: #1a1a2e;
+    margin: 0;
+}
+
+.modal-edit-reward .modal-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #999;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.modal-edit-reward .modal-close:hover {
+    background: #f0f0f0;
+    color: #333;
+}
+
+.modal-edit-reward .modal-body {
+    padding: 20px 24px 24px;
+}
+
+/* =============================
+   EDIT FORM
+   ============================= */
+
+.edit-form-group {
+    margin-bottom: 18px;
+}
+
+.edit-form-group label {
+    display: block;
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+.edit-input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 2px solid #e8ecf1;
+    border-radius: 8px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    color: #333;
+    transition: border-color 0.2s ease;
+    box-sizing: border-box;
+}
+
+.edit-input:focus {
+    outline: none;
+    border-color: #3366cc;
+    box-shadow: 0 0 0 3px rgba(51, 102, 204, 0.1);
+}
+
+.edit-textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 2px solid #e8ecf1;
+    border-radius: 8px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    color: #333;
+    min-height: 80px;
+    resize: vertical;
+    transition: border-color 0.2s ease;
+    box-sizing: border-box;
+}
+
+.edit-textarea:focus {
+    outline: none;
+    border-color: #3366cc;
+    box-shadow: 0 0 0 3px rgba(51, 102, 204, 0.1);
+}
+
+.edit-form-row {
+    display: flex;
+    gap: 16px;
+}
+
+.edit-form-row .edit-form-group {
+    flex: 1;
+}
+
+.edit-file {
+    width: 100%;
+    padding: 8px;
+    border: 2px dashed #e8ecf1;
+    border-radius: 8px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 13px;
+    color: #666;
+    cursor: pointer;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+}
+
+.edit-file:hover {
+    border-color: #3366cc;
+}
+
+.edit-gambar-preview {
+    margin-bottom: 10px;
+}
+
+.edit-gambar-preview img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #e8ecf1;
+}
+
+/* =============================
+   FORM ACTIONS
+   ============================= */
+
+.edit-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.btn-cancel {
+    background: #f0f2f5;
+    color: #666;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-cancel:hover {
+    background: #e0e3e8;
+    color: #333;
+}
+
+.btn-save {
+    background: linear-gradient(135deg, #3366cc, #5588ee);
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 2px 8px rgba(51, 102, 204, 0.3);
+}
+
+.btn-save:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(51, 102, 204, 0.4);
+}
+
+.btn-save:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* =============================
+   NOTIFICATION
+   ============================= */
+
+.notif-toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 14px 20px;
+    border-radius: 10px;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 10000;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    animation: notifSlideIn 0.4s ease;
+}
+
+@keyframes notifSlideIn {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.notif-success {
+    background: linear-gradient(135deg, #d4edda, #c3e6cb);
+    color: #155724;
+    border-left: 4px solid #28a745;
+}
+
+.notif-error {
+    background: linear-gradient(135deg, #f8d7da, #f5c6cb);
+    color: #721c24;
+    border-left: 4px solid #dc3545;
+}
+
+/* =============================
+   RESPONSIVE
+   ============================= */
+
+@media (max-width: 768px) {
+    .kelola-reward-container {
+        padding: 16px;
+    }
+
+    .kelola-reward-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .edit-form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .modal-edit-reward {
+        width: 95vw;
+    }
+}

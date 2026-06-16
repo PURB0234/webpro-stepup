@@ -27,7 +27,7 @@ $query = "DELETE FROM rewards WHERE id_reward = '$id'";
 
 if (mysqli_query($conn, $query)) {
 
-    header("Location: ../../pages/reward_page.php?delete=success");
+    header("Location: ../../admin/kelola_reward.php?delete=success");
     exit();
 
 } else {
