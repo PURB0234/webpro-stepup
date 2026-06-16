@@ -33,7 +33,7 @@ if (isset($_GET['action']) && $_GET['action'] === 'delete') {
 
             if (mysqli_stmt_execute($stmt)) {
 
-                header("Location: ../admin/users_data.php?success=delete");
+                header("Location: ../../admin/users_data.php?success=delete");
                 exit();
 
             } else {
