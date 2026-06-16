@@ -21,33 +21,37 @@ if (isset($_GET['id'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit User</title>
 </head>
-<body>
-    <h2>Edit User</h2>
+<body class="edit-user-body">
+    <h2 class="edit-user-header">Edit User</h2>
 
-    <form action="../api/users/update.php" method="POST">
+    <form class="edit-user-form" action="../api/users/update.php" method="POST">
 
-        <input type="hidden" name="id" value="<?= $user['id']; ?>">
+        <input class="edit-user-input" type="hidden" name="id" value="<?= $user['id']; ?>">
 
-        <label>Name: <?= $user['nama']; ?></label><br>
+        <label class="edit-user-label">Name: <?= $user['nama']; ?></label><br>
 
-        <label>Email: <?= $user['email']; ?></label><br>
+        <label class="edit-user-label">Email: <?= $user['email']; ?></label><br>
 
 
-        <label>Status:</label><br>
-        <select name="status" id="status">
-            <option value="active" <?= ($user['status'] == 'active') ? 'selected' : ''; ?>>Active</option>
-            <option value="inactive" <?= ($user['status'] == 'inactive') ? 'selected' : ''; ?>>Inactive</option>
-            <option value="suspended" <?= ($user['status'] == 'suspended') ? 'selected' : ''; ?>>Suspended</option>
-            <option value="banned" <?= ($user['status'] == 'banned') ? 'selected' : ''; ?>>Banned</option>
+        <label class="edit-user-label">Status:</label><br>
+        <select class="edit-user-select" name="status" id="status">
+            <option class="edit-user-option" value="active" <?= ($user['status'] == 'active') ? 'selected' : ''; ?>>Active</option>
+            <option class="edit-user-option" value="inactive" <?= ($user['status'] == 'inactive') ? 'selected' : ''; ?>>Inactive</option>
+            <option class="edit-user-option" value="suspended" <?= ($user['status'] == 'suspended') ? 'selected' : ''; ?>>Suspended</option>
+            <option class="edit-user-option" value="banned" <?= ($user['status'] == 'banned') ? 'selected' : ''; ?>>Banned</option>
         </select><br><br>
 
-         <label>Role:</label><br>
-        <select name="role" id="role">
-            <option value="user" <?= ($user['role'] == 'user') ? 'selected' : ''; ?>>User</option>
-            <option value="admin" <?= ($user['role'] == 'admin') ? 'selected' : ''; ?>>Admin</option>
+         <label class="edit-user-label">Role:</label><br>
+        <select class="edit-user-select" name="role" id="role">
+            <option class="edit-user-option" value="user" <?= ($user['role'] == 'user') ? 'selected' : ''; ?>>User</option>
+            <option class="edit-user-option" value="admin" <?= ($user['role'] == 'admin') ? 'selected' : ''; ?>>Admin</option>
         </select><br><br>
 
-        <button type="submit" name="update">Update User</button>
+        <button class="edit-user-button" type="submit" name="update">Update User</button>
+
+        <a href="users_data.php">
+            <button class="edit-user-button" type="button">Kembali</button>
+        </a>
 
     </form>
     
