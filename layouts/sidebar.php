@@ -38,9 +38,21 @@
                     </a>
                 </li>
                 <li>
+                    <a href="../pages/challenges.php" class="sidebar-link">
+                        <img class="icon" src="../assets/icon/dumbel.png">
+                        Challenges
+                    </a>
+                </li>
+                <li>
                     <a href="../pages/collections.php" class="sidebar-link">
                         <img class="icon" src="../assets/icon/layer.png" alt="" />
                         Collections
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/badges.php" class="sidebar-link">
+                        <img class="icon" src="../assets/icon/badge_icon/medal.png" alt="" style="width: 20px; height: 20px; object-fit: contain;" />
+                        Badges
                     </a>
                 </li>
 
@@ -59,19 +71,36 @@
                         </a>
                     </li>
                 <?php endif; ?> -->
-                <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin'):  ?>
+                <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin'): ?>
+                    <li class="sidebar-section-header">Admin Panel</li>
                     <li>
-                        <a href="../admin/kelola_reward.php" class="sidebar-link">
+                        <a href="../admin/kelola_reward.php" class="sidebar-link admin-link">
                             <img class="icon" src="../assets/icon/gear.png">
                             Kelola Reward
                         </a>
                     </li>
-                <?php endif; ?>
-                <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin'):  ?>
                     <li>
-                        <a href="../admin/users_data.php" class="sidebar-link">
+                        <a href="../admin/users_data.php" class="sidebar-link admin-link">
                             <img class="icon" src="../assets/icon/management.png">
                             Users Management
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/challenge_management.php" class="sidebar-link admin-link">
+                            <img class="icon" src="../assets/icon/dumbel.png">
+                            Challenge Management
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/collection_management.php" class="sidebar-link admin-link">
+                            <img class="icon" src="../assets/icon/layer.png">
+                            Collections Management
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/badge_management.php" class="sidebar-link admin-link">
+                            <img class="icon" src="../assets/icon/badge_icon/medal.png" style="width: 20px; height: 20px; object-fit: contain;">
+                            Badge Management
                         </a>
                     </li>
                 <?php endif; ?>

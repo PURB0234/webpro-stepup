@@ -25,6 +25,7 @@ if (session_status() === PHP_SESSION_NONE) {
     <link rel="stylesheet" href="../style/tambah_reward_style.css">
     <link rel="stylesheet" href="../style/kelola_reward_style.css">
     <link rel="stylesheet" href="../style/profile.css">
+    <link rel="stylesheet" href="../style/challenge_management.css">
 
     <link rel="stylesheet" href="../style_side_nav_main_footer.css">
     <link rel="stylesheet" href="../style-responsive-layout.css">
