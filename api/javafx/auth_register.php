@@ -23,13 +23,13 @@ require_once __DIR__ . "/../../services/koneksi.php";
 $nama = isset($_POST['nama']) ? trim($_POST['nama']) : '';
 $email = isset($_POST['email']) ? trim($_POST['email']) : '';
 $password = isset($_POST['password']) ? $_POST['password'] : '';
-$nim = isset($_POST['nim']) ? trim($_POST['nim']) : '';
+// $nim = isset($_POST['nim']) ? trim($_POST['nim']) : '';
 
 // Validasi
-if (empty($nama) || empty($email) || empty($password) || empty($nim)) {
+if (empty($nama) || empty($email) || empty($password)) {
     echo json_encode([
         "success" => false,
-        "message" => "Semua field wajib diisi (nama, email, password, nim)"
+        "message" => "Semua field wajib diisi (nama, email, password)"
     ]);
     exit();
 }
@@ -47,10 +47,9 @@ if (mysqli_num_rows($cek) > 0) {
 
 $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 $nama_escaped = mysqli_real_escape_string($conn, $nama);
-$nim_escaped = mysqli_real_escape_string($conn, $nim);
 
-$query = "INSERT INTO users (nama, email, password, nim, role) 
-          VALUES ('$nama_escaped', '$email_escaped', '$hashedPassword', '$nim_escaped', 'user')";
+$query = "INSERT INTO users (nama, email, password, role) 
+          VALUES ('$nama_escaped', '$email_escaped', '$hashedPassword', 'user')";
 
 if (mysqli_query($conn, $query)) {
     $newId = mysqli_insert_id($conn);
@@ -61,7 +60,6 @@ if (mysqli_query($conn, $query)) {
             "id" => $newId,
             "nama" => $nama,
             "email" => $email,
-            "nim" => $nim,
             "role" => "user"
         ]
     ]);

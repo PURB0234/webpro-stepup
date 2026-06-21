@@ -15,7 +15,7 @@
         
           <ul class="nav-links">
             <li><a href="#">Features</a></li>
-            <li><a href="../dashboard.php">How It Works</a></li>
+            <li><a href="#">How It Works</a></li>
             <li><a href="#">Contact Us</a></li>
           </ul>
   
@@ -33,7 +33,7 @@
           exclusive campus deals. Join fun challenges, compete with friends, and
           stay active while unlocking exciting benefits.
         </p>
-        <a href="pages/dashboard.php" class="btn anim">Join Now!</a>
+        <a href="./auth/register_form.php" class="btn anim">Join Now!</a>
       </div>
     </div>
   </body>

@@ -21,9 +21,6 @@
         <label>Password</label><br>
         <input type="password" name="password" required><br><br>
 
-        <label>Nim</label><br>
-        <input type="nim" name="nim" required><br><br>
-
         <button type="submit">Register</button>
     </form>
 

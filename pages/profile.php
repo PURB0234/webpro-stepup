@@ -10,7 +10,6 @@ if (!isset($_SESSION['user_id'])) {
 $user_id = $_SESSION['user_id'];
 $nama = isset($_SESSION['nama']) ? $_SESSION['nama'] : '';
 $email = isset($_SESSION['email']) ? $_SESSION['email'] : '';
-$nim = isset($_SESSION['nim']) ? $_SESSION['nim'] : '';
 $role = isset($_SESSION['role']) ? $_SESSION['role'] : '';
 $foto_profile = isset($_SESSION['foto_profile']) ? $_SESSION['foto_profile'] : '';
 ?>
@@ -37,7 +36,6 @@ $foto_profile = isset($_SESSION['foto_profile']) ? $_SESSION['foto_profile'] : '
         <p class="email-text"><?= htmlspecialchars($email) ?></p>
         
         <div class="user-badges">
-            <span class="badge-item badge-nim">NIM: <?= htmlspecialchars($nim ?: '-') ?></span>
             <span class="badge-item badge-role <?= htmlspecialchars($role) ?>"><?= htmlspecialchars($role) ?></span>
         </div>
     </div>

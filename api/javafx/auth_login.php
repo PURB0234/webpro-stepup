@@ -43,7 +43,6 @@ if ($data && password_verify($password, $data['password'])) {
             "id" => (int) $data['id'],
             "nama" => $data['nama'],
             "email" => $data['email'],
-            "nim" => $data['nim'],
             "role" => $data['role'],
             "status" => isset($data['status']) ? $data['status'] : 'active',
             "foto_profile" => $data['foto_profile'],
